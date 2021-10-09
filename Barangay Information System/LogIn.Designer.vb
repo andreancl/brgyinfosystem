@@ -27,13 +27,14 @@ Partial Class frmLogIn
         Me.txtUserName = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnLogIn = New System.Windows.Forms.Button()
+        Me.btnShowPass = New System.Windows.Forms.Button()
         CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'imgLogo
         '
         Me.imgLogo.Image = CType(resources.GetObject("imgLogo.Image"), System.Drawing.Image)
-        Me.imgLogo.Location = New System.Drawing.Point(572, 64)
+        Me.imgLogo.Location = New System.Drawing.Point(592, 64)
         Me.imgLogo.Name = "imgLogo"
         Me.imgLogo.Size = New System.Drawing.Size(174, 180)
         Me.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -43,7 +44,7 @@ Partial Class frmLogIn
         'txtUserName
         '
         Me.txtUserName.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserName.Location = New System.Drawing.Point(510, 311)
+        Me.txtUserName.Location = New System.Drawing.Point(530, 311)
         Me.txtUserName.Multiline = True
         Me.txtUserName.Name = "txtUserName"
         Me.txtUserName.Size = New System.Drawing.Size(298, 39)
@@ -53,7 +54,7 @@ Partial Class frmLogIn
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(510, 377)
+        Me.txtPassword.Location = New System.Drawing.Point(530, 377)
         Me.txtPassword.Multiline = True
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -63,12 +64,28 @@ Partial Class frmLogIn
         '
         'btnLogIn
         '
-        Me.btnLogIn.Location = New System.Drawing.Point(593, 488)
+        Me.btnLogIn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.btnLogIn.FlatAppearance.BorderSize = 0
+        Me.btnLogIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnLogIn.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogIn.ForeColor = System.Drawing.Color.White
+        Me.btnLogIn.Location = New System.Drawing.Point(605, 461)
         Me.btnLogIn.Name = "btnLogIn"
-        Me.btnLogIn.Size = New System.Drawing.Size(143, 40)
+        Me.btnLogIn.Size = New System.Drawing.Size(161, 41)
         Me.btnLogIn.TabIndex = 3
         Me.btnLogIn.Text = "Log In"
-        Me.btnLogIn.UseVisualStyleBackColor = True
+        Me.btnLogIn.UseVisualStyleBackColor = False
+        '
+        'btnShowPass
+        '
+        Me.btnShowPass.BackgroundImage = CType(resources.GetObject("btnShowPass.BackgroundImage"), System.Drawing.Image)
+        Me.btnShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnShowPass.Location = New System.Drawing.Point(791, 385)
+        Me.btnShowPass.Name = "btnShowPass"
+        Me.btnShowPass.Size = New System.Drawing.Size(28, 23)
+        Me.btnShowPass.TabIndex = 6
+        Me.btnShowPass.UseVisualStyleBackColor = True
         '
         'frmLogIn
         '
@@ -76,6 +93,7 @@ Partial Class frmLogIn
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1306, 592)
+        Me.Controls.Add(Me.btnShowPass)
         Me.Controls.Add(Me.btnLogIn)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUserName)
@@ -93,5 +111,6 @@ Partial Class frmLogIn
     Friend WithEvents txtUserName As System.Windows.Forms.TextBox
     Friend WithEvents txtPassword As System.Windows.Forms.TextBox
     Friend WithEvents btnLogIn As System.Windows.Forms.Button
+    Friend WithEvents btnShowPass As System.Windows.Forms.Button
 
 End Class

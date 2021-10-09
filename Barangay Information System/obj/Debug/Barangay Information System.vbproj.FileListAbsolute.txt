@@ -2,9 +2,11 @@ c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.exe
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.pdb
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.xml
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resources.resources
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.vbproj.GenerateResource.Cache
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.exe
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.xml
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.pdb
+c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.frmLogIn.resources
+C:\Users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
+C:\Users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.frmDashboard.resources
