@@ -370,7 +370,7 @@ Partial Class Dashboard
         '
         'btnServices
         '
-        Me.btnServices.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnServices.BackColor = System.Drawing.Color.DarkTurquoise
         Me.btnServices.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnServices.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnServices.ForeColor = System.Drawing.SystemColors.ControlText
@@ -383,7 +383,7 @@ Partial Class Dashboard
         '
         'btnResident
         '
-        Me.btnResident.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnResident.BackColor = System.Drawing.Color.DarkTurquoise
         Me.btnResident.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnResident.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnResident.ForeColor = System.Drawing.SystemColors.ControlText
@@ -396,7 +396,7 @@ Partial Class Dashboard
         '
         'btnDashboard
         '
-        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnDashboard.BackColor = System.Drawing.Color.DarkTurquoise
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashboard.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlText
@@ -442,7 +442,7 @@ Partial Class Dashboard
         '
         'btnLogout
         '
-        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnLogout.BackColor = System.Drawing.Color.DarkTurquoise
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.SystemColors.ControlText
@@ -455,7 +455,7 @@ Partial Class Dashboard
         '
         'btnBackupandRestore
         '
-        Me.btnBackupandRestore.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBackupandRestore.BackColor = System.Drawing.Color.DarkTurquoise
         Me.btnBackupandRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBackupandRestore.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBackupandRestore.ForeColor = System.Drawing.SystemColors.ControlText
@@ -468,7 +468,7 @@ Partial Class Dashboard
         '
         'btnUser
         '
-        Me.btnUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnUser.BackColor = System.Drawing.Color.DarkTurquoise
         Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUser.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUser.ForeColor = System.Drawing.SystemColors.ControlText
@@ -503,7 +503,7 @@ Partial Class Dashboard
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PictureBox2.BackColor = System.Drawing.Color.DarkTurquoise
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(50, 281)
