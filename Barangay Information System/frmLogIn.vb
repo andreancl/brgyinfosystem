@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class frmLogIn
+Public Class LogIn
     Dim MysqlConn As MySqlConnection
     Dim Command As MySqlCommand
 
@@ -30,7 +30,7 @@ Public Class frmLogIn
             End While
             If count = 1 Then
                 MessageBox.Show("Welcome to Barangay Information System")
-                frmDashboard.Show()
+                Dashboard.Show()
                 Me.Hide()
             ElseIf count > 1 Then
                 MessageBox.Show("Username and Password. Please Try Again")
@@ -44,5 +44,9 @@ Public Class frmLogIn
         Finally
             MysqlConn.Dispose()
         End Try
+    End Sub
+
+    Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
     End Sub
 End Class

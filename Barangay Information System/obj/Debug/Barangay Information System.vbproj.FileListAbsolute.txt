@@ -7,6 +7,12 @@ c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.exe
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.xml
 c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.pdb
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.frmLogIn.resources
 C:\Users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
-C:\Users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.frmDashboard.resources
+C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\bin\Debug\Barangay Information System.exe.config
+C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.exe
+C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.xml
+C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.pdb
+C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
+C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
+C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Register.resources
+C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
