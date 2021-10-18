@@ -1,39 +1,14 @@
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.exe.config
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.exe
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.pdb
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.xml
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resources.resources
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.vbproj.GenerateResource.Cache
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.exe
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.xml
-c:\users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.pdb
-C:\Users\asus\documents\visual studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
-C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\bin\Debug\Barangay Information System.exe.config
-C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.exe
-C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.xml
-C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.pdb
-C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
-C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
-C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Register.resources
-C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-C:\Users\PC\Desktop\gg\Barangay Information System\bin\Debug\Barangay Information System.exe.config
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.exe
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.xml
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.pdb
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Register.resources
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Resources.resources
-C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.vbproj.GenerateResource.Cache
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe.config
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.exe
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.xml
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.pdb
->>>>>>> 9a43b9353fd152e25f93aca6470e64fc9cb69788
->>>>>>> 8e2b6963440f0acdc0f3a50acc4baebaf12680fd
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe.config
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.exe
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.xml
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.pdb
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Register.resources
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Resources.resources
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.vbproj.GenerateResource.Cache
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.pdb
+C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.xml

@@ -1,7 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Resident
-    Dim MysqlConn As MySqlConnection
     Dim Command As MySqlCommand
     Dim dbDataSet As New DataTable
 
@@ -11,25 +10,23 @@ Public Class Resident
     End Sub
 
     Private Sub load_ResidentInfo()
-        MysqlConn = New MySqlConnection
-        MysqlConn.ConnectionString = "server=localhost;userid=root;password=nicole062419;database=brgyinfodb"
+        Dim connection As New Connections 'Called the Class Connection'
+        connection.OpenDBConnection() 'Called the Method OpenDBConnection'
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
 
         Try
-            MysqlConn.Open()
             Dim Query As String
-            Query = "select * from brgyinfodb.tbl_resident"
-            Command = New MySqlCommand(Query, MysqlConn)
+            Query = "select * from tbl_resident"
+            Command = New MySqlCommand(Query, connection.GetDBConnection()) 'Called the Method GetDBConnection that will return the actual DB Connection'
             SDA.SelectCommand = Command
             SDA.Fill(dbDataSet)
             bSource.DataSource = dbDataSet
             dgvResident.DataSource = bSource
             SDA.Update(dbDataSet)
-
-            MysqlConn.Close()
+            connection.CloseDBConnection() 'Called the Method CloseDBConnection'
         Catch ex As Exception
-
+            connection.DisposeDBConnection() 'Called the Method DisposeDBConnection'
         End Try
     End Sub
 

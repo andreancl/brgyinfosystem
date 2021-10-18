@@ -179,7 +179,7 @@ Partial Class Dashboard
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(873, 234)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(193, 16)
+        Me.Label8.Size = New System.Drawing.Size(198, 16)
         Me.Label8.TabIndex = 55
         Me.Label8.Text = "Resident Record Summary"
         '

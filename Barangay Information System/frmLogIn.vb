@@ -1,7 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class LogIn
-    Dim MysqlConn As MySqlConnection
     Dim Command As MySqlCommand
 
     Private Sub btnShowPass_Click(sender As Object, e As EventArgs) Handles btnShowPass.Click
@@ -13,15 +12,13 @@ Public Class LogIn
     End Sub
 
     Private Sub btnLogIn_Click(sender As Object, e As EventArgs) Handles btnLogIn.Click
-        MysqlConn = New MySqlConnection
-        MysqlConn.ConnectionString = "server=localhost;userid=root;password=nicole062419;database=brgyinfodb"
+        Dim connection As New Connections 'Called the Class Connection'
+        connection.OpenDBConnection() 'Called the Method OpenDBConnection'
         Dim Reader As MySqlDataReader
-
         Try
-            MysqlConn.Open()
             Dim Query As String
-            Query = "select * from brgyinfodb.tbl_user where Username='" & txtUserName.Text & "'and Password='" & txtPassword.Text & "'"
-            Command = New MySqlCommand(Query, MysqlConn)
+            Query = "select * from tbl_user where Username='" & txtUserName.Text & "'and Password='" & txtPassword.Text & "'"
+            Command = New MySqlCommand(Query, connection.GetDBConnection()) 'Called the Method GetDBConnection that will return the actual DB Connection'
             Reader = Command.ExecuteReader
             Dim count As Integer
             count = 0
@@ -37,12 +34,11 @@ Public Class LogIn
             Else
                 MessageBox.Show("Invalid Username and Password.")
             End If
-
-            MysqlConn.Close()
+            connection.CloseDBConnection() 'Called the Method CloseDBConnection'
         Catch ex As MySqlException
             MessageBox.Show(ex.Message)
         Finally
-            MysqlConn.Dispose()
+            connection.DisposeDBConnection() 'Called the Method DisposeDBConnection'
         End Try
     End Sub
 
