@@ -18,6 +18,11 @@ C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\
 C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
 <<<<<<< HEAD
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 =======
 =======
 <<<<<<< HEAD
@@ -40,6 +45,10 @@ C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\De
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.pdb
 >>>>>>> 9a43b9353fd152e25f93aca6470e64fc9cb69788
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 8e2b6963440f0acdc0f3a50acc4baebaf12680fd
+>>>>>>> Stashed changes
 =======
 >>>>>>> 8e2b6963440f0acdc0f3a50acc4baebaf12680fd
 >>>>>>> Stashed changes
