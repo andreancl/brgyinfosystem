@@ -45,6 +45,21 @@ Partial Class Resident
         Me.txtSearchBox = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnSearch = New System.Windows.Forms.Button()
+        Me.Lastname = New System.Windows.Forms.TextBox()
+        Me.firstname = New System.Windows.Forms.TextBox()
+        Me.Middlename = New System.Windows.Forms.TextBox()
+        Me.suffix = New System.Windows.Forms.TextBox()
+        Me.birthplace = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.sex = New System.Windows.Forms.TextBox()
+        Me.age = New System.Windows.Forms.TextBox()
+        Me.nationality = New System.Windows.Forms.TextBox()
+        Me.Religion = New System.Windows.Forms.TextBox()
+        Me.civilstats = New System.Windows.Forms.TextBox()
+        Me.contact = New System.Windows.Forms.TextBox()
+        Me.address = New System.Windows.Forms.TextBox()
+        Me.save = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -275,9 +290,10 @@ Partial Class Resident
         '
         'txtSearchBox
         '
+        Me.txtSearchBox.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearchBox.Location = New System.Drawing.Point(18, 13)
         Me.txtSearchBox.Name = "txtSearchBox"
-        Me.txtSearchBox.Size = New System.Drawing.Size(305, 21)
+        Me.txtSearchBox.Size = New System.Drawing.Size(305, 27)
         Me.txtSearchBox.TabIndex = 76
         '
         'Panel1
@@ -289,7 +305,7 @@ Partial Class Resident
         Me.Panel1.Controls.Add(Me.btnNewResident)
         Me.Panel1.Location = New System.Drawing.Point(330, 113)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1011, 46)
+        Me.Panel1.Size = New System.Drawing.Size(1011, 57)
         Me.Panel1.TabIndex = 77
         '
         'btnSearch
@@ -301,9 +317,147 @@ Partial Class Resident
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearch.Location = New System.Drawing.Point(329, 13)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(29, 21)
+        Me.btnSearch.Size = New System.Drawing.Size(29, 27)
         Me.btnSearch.TabIndex = 77
         Me.btnSearch.UseVisualStyleBackColor = False
+        '
+        'Lastname
+        '
+        Me.Lastname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lastname.Location = New System.Drawing.Point(393, 334)
+        Me.Lastname.Name = "Lastname"
+        Me.Lastname.Size = New System.Drawing.Size(213, 27)
+        Me.Lastname.TabIndex = 78
+        Me.Lastname.Text = "Last Name"
+        '
+        'firstname
+        '
+        Me.firstname.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.firstname.Location = New System.Drawing.Point(659, 334)
+        Me.firstname.Name = "firstname"
+        Me.firstname.Size = New System.Drawing.Size(233, 27)
+        Me.firstname.TabIndex = 79
+        Me.firstname.Text = "First Name"
+        '
+        'Middlename
+        '
+        Me.Middlename.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.Middlename.Location = New System.Drawing.Point(947, 334)
+        Me.Middlename.Name = "Middlename"
+        Me.Middlename.Size = New System.Drawing.Size(197, 27)
+        Me.Middlename.TabIndex = 80
+        Me.Middlename.Text = "Middle Name"
+        '
+        'suffix
+        '
+        Me.suffix.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.suffix.Location = New System.Drawing.Point(1200, 334)
+        Me.suffix.Name = "suffix"
+        Me.suffix.Size = New System.Drawing.Size(100, 27)
+        Me.suffix.TabIndex = 81
+        Me.suffix.Text = "Suffix"
+        '
+        'birthplace
+        '
+        Me.birthplace.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.birthplace.Location = New System.Drawing.Point(771, 398)
+        Me.birthplace.Name = "birthplace"
+        Me.birthplace.Size = New System.Drawing.Size(529, 27)
+        Me.birthplace.TabIndex = 82
+        Me.birthplace.Text = "Birth Place"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(393, 398)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(315, 27)
+        Me.DateTimePicker1.TabIndex = 83
+        '
+        'sex
+        '
+        Me.sex.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.sex.Location = New System.Drawing.Point(393, 462)
+        Me.sex.Name = "sex"
+        Me.sex.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.sex.Size = New System.Drawing.Size(213, 27)
+        Me.sex.TabIndex = 84
+        Me.sex.Text = "Sex"
+        '
+        'age
+        '
+        Me.age.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.age.Location = New System.Drawing.Point(676, 462)
+        Me.age.Name = "age"
+        Me.age.Size = New System.Drawing.Size(135, 27)
+        Me.age.TabIndex = 85
+        Me.age.Text = "Age"
+        '
+        'nationality
+        '
+        Me.nationality.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.nationality.Location = New System.Drawing.Point(870, 462)
+        Me.nationality.Name = "nationality"
+        Me.nationality.Size = New System.Drawing.Size(430, 27)
+        Me.nationality.TabIndex = 86
+        Me.nationality.Text = "Nationality"
+        '
+        'Religion
+        '
+        Me.Religion.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.Religion.Location = New System.Drawing.Point(393, 525)
+        Me.Religion.Name = "Religion"
+        Me.Religion.Size = New System.Drawing.Size(101, 27)
+        Me.Religion.TabIndex = 87
+        Me.Religion.Text = "Religion"
+        '
+        'civilstats
+        '
+        Me.civilstats.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.civilstats.Location = New System.Drawing.Point(556, 525)
+        Me.civilstats.Name = "civilstats"
+        Me.civilstats.Size = New System.Drawing.Size(273, 27)
+        Me.civilstats.TabIndex = 88
+        Me.civilstats.Text = "Civil Status"
+        '
+        'contact
+        '
+        Me.contact.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.contact.Location = New System.Drawing.Point(897, 525)
+        Me.contact.Name = "contact"
+        Me.contact.Size = New System.Drawing.Size(403, 27)
+        Me.contact.TabIndex = 89
+        Me.contact.Text = "Contact Number"
+        '
+        'address
+        '
+        Me.address.Font = New System.Drawing.Font("Verdana", 12.0!)
+        Me.address.Location = New System.Drawing.Point(393, 584)
+        Me.address.Name = "address"
+        Me.address.Size = New System.Drawing.Size(907, 27)
+        Me.address.TabIndex = 90
+        Me.address.Text = "Address"
+        '
+        'save
+        '
+        Me.save.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.save.Location = New System.Drawing.Point(1143, 634)
+        Me.save.Name = "save"
+        Me.save.Size = New System.Drawing.Size(157, 33)
+        Me.save.TabIndex = 91
+        Me.save.Text = "Save"
+        Me.save.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.Label3.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(387, 228)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(223, 32)
+        Me.Label3.TabIndex = 92
+        Me.Label3.Text = "New Resident"
         '
         'Resident
         '
@@ -313,6 +467,21 @@ Partial Class Resident
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1370, 722)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.save)
+        Me.Controls.Add(Me.address)
+        Me.Controls.Add(Me.contact)
+        Me.Controls.Add(Me.civilstats)
+        Me.Controls.Add(Me.Religion)
+        Me.Controls.Add(Me.nationality)
+        Me.Controls.Add(Me.age)
+        Me.Controls.Add(Me.sex)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.birthplace)
+        Me.Controls.Add(Me.suffix)
+        Me.Controls.Add(Me.Middlename)
+        Me.Controls.Add(Me.firstname)
+        Me.Controls.Add(Me.Lastname)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.dgvResident)
@@ -372,4 +541,19 @@ Partial Class Resident
     Friend WithEvents txtSearchBox As System.Windows.Forms.TextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnSearch As System.Windows.Forms.Button
+    Friend WithEvents Lastname As System.Windows.Forms.TextBox
+    Friend WithEvents firstname As System.Windows.Forms.TextBox
+    Friend WithEvents Middlename As System.Windows.Forms.TextBox
+    Friend WithEvents suffix As System.Windows.Forms.TextBox
+    Friend WithEvents birthplace As System.Windows.Forms.TextBox
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents sex As System.Windows.Forms.TextBox
+    Friend WithEvents age As System.Windows.Forms.TextBox
+    Friend WithEvents nationality As System.Windows.Forms.TextBox
+    Friend WithEvents Religion As System.Windows.Forms.TextBox
+    Friend WithEvents civilstats As System.Windows.Forms.TextBox
+    Friend WithEvents contact As System.Windows.Forms.TextBox
+    Friend WithEvents address As System.Windows.Forms.TextBox
+    Friend WithEvents save As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

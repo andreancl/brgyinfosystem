@@ -43,4 +43,12 @@ Public Class Resident
         Register.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Middlename_TextChanged(sender As Object, e As EventArgs) Handles Middlename.TextChanged
+
+    End Sub
+
+    Private Sub sex_TextChanged(sender As Object, e As EventArgs) Handles sex.TextChanged
+
+    End Sub
 End Class

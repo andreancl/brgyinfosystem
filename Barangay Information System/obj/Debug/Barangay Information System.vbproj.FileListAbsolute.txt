@@ -16,3 +16,14 @@ C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\
 C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
 C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Register.resources
 C:\Users\asus\Documents\Visual Studio 2012\Projects\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
+C:\Users\PC\Desktop\gg\Barangay Information System\bin\Debug\Barangay Information System.exe.config
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.exe
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.xml
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.pdb
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Register.resources
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay_Information_System.Resources.resources
+C:\Users\PC\Desktop\gg\Barangay Information System\obj\Debug\Barangay Information System.vbproj.GenerateResource.Cache
