@@ -1,14 +1,19 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class LogIn
+Public Class frmLogIn
     Dim Command As MySqlCommand
 
-    Private Sub btnShowPass_Click(sender As Object, e As EventArgs) Handles btnShowPass.Click
-        If txtPassword.UseSystemPasswordChar = True Then
-            txtPassword.UseSystemPasswordChar = False
-        Else
-            txtPassword.UseSystemPasswordChar = True
-        End If
+    Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        anima1.ShowSync(l1)
+        anima1.AnimationType = Guna.UI.Animation.AnimationType.HorizSlide
+        anima1.ShowSync(l2)
+        anima1.AnimationType = Guna.UI.Animation.AnimationType.HorizBlind
+        anima1.ShowSync(l3)
+        anima1.AnimationType = Guna.UI.Animation.AnimationType.HorizBlind
+        anima1.ShowSync(L4)
+        anima1.AnimationType = Guna.UI.Animation.AnimationType.HorizSlide
+        anima1.ShowSync(p2)
     End Sub
 
     Private Sub btnLogIn_Click(sender As Object, e As EventArgs) Handles btnLogIn.Click
@@ -17,7 +22,7 @@ Public Class LogIn
         Dim Reader As MySqlDataReader
         Try
             Dim Query As String
-            Query = "select * from tbl_user where Username='" & txtUserName.Text & "'and Password='" & txtPassword.Text & "'"
+            Query = "select * from users where Username='" & txtUserName.Text & "'and Password='" & txtPassword.Text & "'"
             Command = New MySqlCommand(Query, connection.GetDBConnection()) 'Called the Method GetDBConnection that will return the actual DB Connection'
             Reader = Command.ExecuteReader
             Dim count As Integer
@@ -42,7 +47,21 @@ Public Class LogIn
         End Try
     End Sub
 
-    Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.WindowState = FormWindowState.Maximized
+    Private Sub linkaccnt_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkaccnt.LinkClicked
+        anima1.HideSync(p2)
+        anima1.ShowSync(p3)
+    End Sub
+
+    Private Sub btnx_Click_1(sender As Object, e As EventArgs) Handles btnx.Click
+        anima1.HideSync(p3)
+        anima1.ShowSync(p2)
+    End Sub
+
+    Private Sub cbxPassword_CheckedChanged(sender As Object, e As EventArgs) Handles cbxPassword.CheckedChanged
+        If cbxPassword.Checked = False Then
+            txtPassword.isPassword = True
+        Else
+            txtPassword.isPassword = False
+        End If
     End Sub
 End Class

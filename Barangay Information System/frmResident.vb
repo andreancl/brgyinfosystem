@@ -1,51 +1,45 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Resident
+    Dim MysqlConn As MySqlConnection
     Dim Command As MySqlCommand
     Dim dbDataSet As New DataTable
 
-    Private Sub Resident_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub frmResident_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         load_ResidentInfo()
-        Me.WindowState = FormWindowState.Maximized
+
+        dgvResident.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgvResident.AlternatingRowsDefaultCellStyle.BackColor = Color.White
     End Sub
 
-    Private Sub load_ResidentInfo()
-        Dim connection As New Connections 'Called the Class Connection'
-        connection.OpenDBConnection() 'Called the Method OpenDBConnection'
-        Dim SDA As New MySqlDataAdapter
-        Dim bSource As New BindingSource
-
+    Public Sub load_ResidentInfo()
+        Dim connection As New Connections
+        Dim adapter As MySqlDataAdapter
         Try
-            Dim Query As String
-            Query = "select * from tbl_resident"
-            Command = New MySqlCommand(Query, connection.GetDBConnection()) 'Called the Method GetDBConnection that will return the actual DB Connection'
-            SDA.SelectCommand = Command
-            SDA.Fill(dbDataSet)
-            bSource.DataSource = dbDataSet
-            dgvResident.DataSource = bSource
-            SDA.Update(dbDataSet)
-            connection.CloseDBConnection() 'Called the Method CloseDBConnection'
+            connection.OpenDBConnection()
+            Dim sql As String = "SELECT * FROM residents"
+            Command = New MySqlCommand(sql, connection.GetDBConnection)
+            adapter = New MySqlDataAdapter(Command)
+            Dim ds As New DataSet
+            adapter.Fill(ds)
+            dgvResident.DataSource = ds.Tables(0)
         Catch ex As Exception
-            connection.DisposeDBConnection() 'Called the Method DisposeDBConnection'
+            MsgBox(ex.Message)
+        Finally
+            connection.CloseDBConnection()
         End Try
     End Sub
 
-    Private Sub txtSearchBox_TextChanged(sender As Object, e As EventArgs) Handles txtSearchBox.TextChanged
-        Dim DV As New DataView(dbDataSet)
-        DV.RowFilter = String.Format("LastName Like'%{0}%'", txtSearchBox.Text)
-        dgvResident.DataSource = DV
-    End Sub
-
-    Private Sub btnNewResident_Click(sender As Object, e As EventArgs) Handles btnNewResident.Click
-        Register.Show()
+    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+        Dashboard.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Middlename_TextChanged(sender As Object, e As EventArgs) Handles Middlename.TextChanged
-
+    Private Sub btnNewResident_Click(sender As Object, e As EventArgs) Handles btnNewResident.Click
+        NewResident.Show()
     End Sub
 
-    Private Sub sex_TextChanged(sender As Object, e As EventArgs) Handles sex.TextChanged
-
+    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+        NewUser.Show()
     End Sub
 End Class

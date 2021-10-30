@@ -1,18 +1,18 @@
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe.config
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.exe
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.xml
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.pdb
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.LogIn.resources
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Register.resources
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Resources.resources
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.vbproj.GenerateResource.Cache
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.pdb
-C:\xampp\htdocs\hci_101\group12_brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.xml
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe.config
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.exe
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.xml
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.pdb
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.exe.config
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.exe
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.pdb
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\bin\Debug\Barangay Information System.xml
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resources.resources
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.vbproj.GenerateResource.Cache
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.exe
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.xml
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.pdb
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\bin\Debug\Guna.UI.dll
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.frmLogIn.resources
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.NewResident.resources
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.Services.resources
+C:\Users\asus\Documents\Visual Studio 2012\Barangay Information System\Barangay Information System\obj\Debug\Barangay_Information_System.NewUser.resources
