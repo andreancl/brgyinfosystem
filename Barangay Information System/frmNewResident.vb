@@ -13,7 +13,7 @@ Public Class NewResident
             command = New MySqlCommand(query, connection.GetDBConnection())
             connection.OpenDBConnection()
             command.ExecuteNonQuery()
-            MessageBox.Show("Data Saved.")
+            MessageBox.Show("Registration Successful.")
             Resident.load_ResidentInfo()
             connection.CloseDBConnection() 'Called the Method CloseDBConnection'
         Catch ex As MySqlException
@@ -23,7 +23,7 @@ Public Class NewResident
         End Try
     End Sub
 
-    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+    Private Sub linkClose_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkClose.LinkClicked
         Me.Close()
     End Sub
 End Class

@@ -8,11 +8,13 @@ Public Class NewUser
         connection.OpenDBConnection() 'Called the Method OpenDBConnection'
         Dim Reader As MySqlDataReader
         Try
+            Dim datetime_now As String = String.Format("{0:ddMMyyyhhss}", DateTime.Now)
+            Dim user_id = "USER" + datetime_now
             Dim Query As String
-            Query = "insert into users(LastName,FirstName,MiddleName,Suffix,Sex,Birthdate,ContactNumber,Address,Username,Password,Position) values ('" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "', '" & cmbSuffix.Text & "', '" & cmbSex.Text & "', '" & dtpBirthdate.Text & "','" & txtContactNum.Text & "', '" & txtAddress.Text & "', '" & txtUsername.Text & "', '" & txtPassword.Text & "', '" & txtPosition.Text & "')"
+            Query = "insert into users(UserId,LastName,FirstName,MiddleName,Suffix,Sex,Birthdate,ContactNumber,Address,Username,Password,Position,UserTypeId) values ('" & user_id & "','" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "', '" & cmbSuffix.Text & "', '" & cmbSex.Text & "', '" & dtpBirthdate.Text & "','" & txtContactNum.Text & "', '" & txtAddress.Text & "', '" & txtUsername.Text & "', '" & txtPassword.Text & "', '" & cmbPosition.Text & "','" & cmbUserType.Text & "')"
             Command = New MySqlCommand(Query, connection.GetDBConnection())
             Reader = Command.ExecuteReader
-            MessageBox.Show("Account created.")
+            MessageBox.Show("Account has been successfully created.")
             Me.Close()
             connection.CloseDBConnection() 'Called the Method CloseDBConnection'
         Catch ex As MySqlException
@@ -24,9 +26,5 @@ Public Class NewUser
 
     Private Sub linkClose_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkClose.LinkClicked
         Me.Close()
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
     End Sub
 End Class
