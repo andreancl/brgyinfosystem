@@ -26,10 +26,10 @@ Partial Class Dashboard
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lblBIS = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnUser = New System.Windows.Forms.Button()
         Me.btnBackup = New System.Windows.Forms.Button()
-        Me.btnLogOut = New System.Windows.Forms.Button()
+        Me.btnUser = New System.Windows.Forms.Button()
         Me.btnBlotter = New System.Windows.Forms.Button()
+        Me.btnLogOut = New System.Windows.Forms.Button()
         Me.btnServices = New System.Windows.Forms.Button()
         Me.btnResident = New System.Windows.Forms.Button()
         Me.btnDashboard = New System.Windows.Forms.Button()
@@ -67,10 +67,10 @@ Partial Class Dashboard
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.btnUser)
         Me.Panel1.Controls.Add(Me.btnBackup)
-        Me.Panel1.Controls.Add(Me.btnLogOut)
+        Me.Panel1.Controls.Add(Me.btnUser)
         Me.Panel1.Controls.Add(Me.btnBlotter)
+        Me.Panel1.Controls.Add(Me.btnLogOut)
         Me.Panel1.Controls.Add(Me.btnServices)
         Me.Panel1.Controls.Add(Me.btnResident)
         Me.Panel1.Controls.Add(Me.btnDashboard)
@@ -81,27 +81,6 @@ Partial Class Dashboard
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(256, 749)
         Me.Panel1.TabIndex = 4
-        '
-        'btnUser
-        '
-        Me.btnUser.BackColor = System.Drawing.Color.Transparent
-        Me.btnUser.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnUser.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDark
-        Me.btnUser.FlatAppearance.BorderSize = 0
-        Me.btnUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUser.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUser.ForeColor = System.Drawing.Color.White
-        Me.btnUser.Image = CType(resources.GetObject("btnUser.Image"), System.Drawing.Image)
-        Me.btnUser.Location = New System.Drawing.Point(0, 557)
-        Me.btnUser.Name = "btnUser"
-        Me.btnUser.Padding = New System.Windows.Forms.Padding(0, 0, 50, 0)
-        Me.btnUser.Size = New System.Drawing.Size(256, 50)
-        Me.btnUser.TabIndex = 9
-        Me.btnUser.Text = "   User"
-        Me.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnUser.UseVisualStyleBackColor = False
         '
         'btnBackup
         '
@@ -114,15 +93,57 @@ Partial Class Dashboard
         Me.btnBackup.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBackup.ForeColor = System.Drawing.Color.White
         Me.btnBackup.Image = CType(resources.GetObject("btnBackup.Image"), System.Drawing.Image)
-        Me.btnBackup.Location = New System.Drawing.Point(0, 507)
+        Me.btnBackup.Location = New System.Drawing.Point(0, 557)
         Me.btnBackup.Name = "btnBackup"
         Me.btnBackup.Padding = New System.Windows.Forms.Padding(6, 0, 40, 0)
         Me.btnBackup.Size = New System.Drawing.Size(256, 50)
-        Me.btnBackup.TabIndex = 8
+        Me.btnBackup.TabIndex = 13
         Me.btnBackup.Text = "   Backup"
         Me.btnBackup.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnBackup.UseVisualStyleBackColor = False
+        '
+        'btnUser
+        '
+        Me.btnUser.BackColor = System.Drawing.Color.Transparent
+        Me.btnUser.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnUser.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDark
+        Me.btnUser.FlatAppearance.BorderSize = 0
+        Me.btnUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUser.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUser.ForeColor = System.Drawing.Color.White
+        Me.btnUser.Image = CType(resources.GetObject("btnUser.Image"), System.Drawing.Image)
+        Me.btnUser.Location = New System.Drawing.Point(0, 507)
+        Me.btnUser.Name = "btnUser"
+        Me.btnUser.Padding = New System.Windows.Forms.Padding(0, 0, 50, 0)
+        Me.btnUser.Size = New System.Drawing.Size(256, 50)
+        Me.btnUser.TabIndex = 12
+        Me.btnUser.Text = "   User"
+        Me.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnUser.UseVisualStyleBackColor = False
+        '
+        'btnBlotter
+        '
+        Me.btnBlotter.BackColor = System.Drawing.Color.Transparent
+        Me.btnBlotter.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnBlotter.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDark
+        Me.btnBlotter.FlatAppearance.BorderSize = 0
+        Me.btnBlotter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.btnBlotter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBlotter.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBlotter.ForeColor = System.Drawing.Color.White
+        Me.btnBlotter.Image = CType(resources.GetObject("btnBlotter.Image"), System.Drawing.Image)
+        Me.btnBlotter.Location = New System.Drawing.Point(0, 457)
+        Me.btnBlotter.Name = "btnBlotter"
+        Me.btnBlotter.Padding = New System.Windows.Forms.Padding(6, 0, 40, 0)
+        Me.btnBlotter.Size = New System.Drawing.Size(256, 50)
+        Me.btnBlotter.TabIndex = 11
+        Me.btnBlotter.Text = "   Blotter"
+        Me.btnBlotter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBlotter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBlotter.UseVisualStyleBackColor = False
         '
         'btnLogOut
         '
@@ -144,27 +165,6 @@ Partial Class Dashboard
         Me.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnLogOut.UseVisualStyleBackColor = False
-        '
-        'btnBlotter
-        '
-        Me.btnBlotter.BackColor = System.Drawing.Color.Transparent
-        Me.btnBlotter.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnBlotter.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDark
-        Me.btnBlotter.FlatAppearance.BorderSize = 0
-        Me.btnBlotter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.btnBlotter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBlotter.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBlotter.ForeColor = System.Drawing.Color.White
-        Me.btnBlotter.Image = CType(resources.GetObject("btnBlotter.Image"), System.Drawing.Image)
-        Me.btnBlotter.Location = New System.Drawing.Point(0, 457)
-        Me.btnBlotter.Name = "btnBlotter"
-        Me.btnBlotter.Padding = New System.Windows.Forms.Padding(6, 0, 40, 0)
-        Me.btnBlotter.Size = New System.Drawing.Size(256, 50)
-        Me.btnBlotter.TabIndex = 6
-        Me.btnBlotter.Text = "   Blotter"
-        Me.btnBlotter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBlotter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnBlotter.UseVisualStyleBackColor = False
         '
         'btnServices
         '
@@ -293,7 +293,6 @@ Partial Class Dashboard
     Friend WithEvents lblBIS As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnLogOut As System.Windows.Forms.Button
-    Friend WithEvents btnBlotter As System.Windows.Forms.Button
     Friend WithEvents btnServices As System.Windows.Forms.Button
     Friend WithEvents btnResident As System.Windows.Forms.Button
     Friend WithEvents btnDashboard As System.Windows.Forms.Button
@@ -301,6 +300,7 @@ Partial Class Dashboard
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents btnUser As System.Windows.Forms.Button
     Friend WithEvents btnBackup As System.Windows.Forms.Button
+    Friend WithEvents btnUser As System.Windows.Forms.Button
+    Friend WithEvents btnBlotter As System.Windows.Forms.Button
 End Class

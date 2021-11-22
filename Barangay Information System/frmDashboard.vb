@@ -1,14 +1,20 @@
 ﻿Public Class Dashboard
+
     Private Sub btnResident_Click(sender As Object, e As EventArgs) Handles btnResident.Click
         Resident.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+    Private Sub btnBlotter_Click(sender As Object, e As EventArgs) Handles btnBlotter.Click
+        Blotter.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnUser_Click(sender As Object, e As EventArgs)
         NewUser.Show()
     End Sub
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
-        ExitSys.ExitSystem()
+        sysExit.ExitSystem()
     End Sub
 End Class

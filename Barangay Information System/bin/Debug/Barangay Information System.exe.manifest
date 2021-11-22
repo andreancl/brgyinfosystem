@@ -92,14 +92,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Information System.exe" size="648192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Information System.exe" size="686080">
       <assemblyIdentity name="Barangay Information System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XllJbQCcE6Q5U8uwTVsu5AV00egZlgXAiNlHZ3uk13o=</dsig:DigestValue>
+        <dsig:DigestValue>8AxStldtqo/FDJeXhsu1Ar3XWN/HnRsDdgV3p5AZvZ0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -127,13 +127,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Barangay Information System.exe.config" size="171">
+  <file name="Barangay Information System.exe.config" size="165">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eF4M0Tqu7/rECtozbcR0Fcp6eNxVqgopyKptVmWohMA=</dsig:DigestValue>
+      <dsig:DigestValue>skZ9Hbhb9OXTh/3FVq0W7KAk2PXUF5ezz/CjIHxgXYY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

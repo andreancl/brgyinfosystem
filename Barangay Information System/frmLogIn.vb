@@ -1,8 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frmLogIn
-    Dim Command As MySqlCommand
-
     Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         anima1.ShowSync(l1)
@@ -20,6 +18,7 @@ Public Class frmLogIn
         Dim connection As New Connections 'Called the Class Connection'
         connection.OpenDBConnection() 'Called the Method OpenDBConnection'
         Dim Reader As MySqlDataReader
+        Dim Command As New MySqlCommand
         Try
             Dim Query As String
             Query = "select * from users where Username='" & txtUserName.Text & "'and Password='" & txtPassword.Text & "'"

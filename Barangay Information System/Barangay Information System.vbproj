@@ -107,8 +107,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connections.vb" />
-    <Compile Include="Exit.vb" />
+    <Compile Include="includes\conn.vb" />
+    <Compile Include="includes\connection.vb" />
+    <Compile Include="includes\crud.vb" />
+    <Compile Include="includes\exit.vb" />
     <Compile Include="frmLogIn.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +122,12 @@
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="frmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewBlotter.Designer.vb">
+      <DependentUpon>frmNewBlotter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewBlotter.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNewResident.Designer.vb">
@@ -134,12 +142,13 @@
     <Compile Include="frmResident.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmServices.Designer.vb">
-      <DependentUpon>frmServices.vb</DependentUpon>
+    <Compile Include="frmBlotter.Designer.vb">
+      <DependentUpon>frmBlotter.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmServices.vb">
+    <Compile Include="frmBlotter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="includes\functions.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -169,27 +178,29 @@
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNewBlotter.resx">
+      <DependentUpon>frmNewBlotter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNewResident.resx">
       <DependentUpon>frmNewResident.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmResident.resx">
       <DependentUpon>frmResident.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmServices.resx">
-      <DependentUpon>frmServices.vb</DependentUpon>
+    <EmbeddedResource Include="frmBlotter.resx">
+      <DependentUpon>frmBlotter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewUser.resx">
       <DependentUpon>frmNewUser.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Barangay Information System_TemporaryKey.pfx" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -215,6 +226,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

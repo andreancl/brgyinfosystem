@@ -24,7 +24,6 @@ Partial Class NewUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewUser))
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.cmbUserType = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.cmbPosition = New System.Windows.Forms.ComboBox()
         Me.linkClose = New Guna.UI.WinForms.GunaLinkLabel()
@@ -53,61 +52,32 @@ Partial Class NewUser
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lblBIS = New System.Windows.Forms.Label()
+        Me.gbUser = New System.Windows.Forms.GroupBox()
+        Me.rdouser = New System.Windows.Forms.RadioButton()
+        Me.rdoadmin = New System.Windows.Forms.RadioButton()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.gbUser.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.cmbUserType)
-        Me.Panel2.Controls.Add(Me.Label12)
-        Me.Panel2.Controls.Add(Me.cmbPosition)
+        Me.Panel2.Controls.Add(Me.gbUser)
         Me.Panel2.Controls.Add(Me.linkClose)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Controls.Add(Me.txtUsername)
-        Me.Panel2.Controls.Add(Me.txtPassword)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.btnCreate)
-        Me.Panel2.Controls.Add(Me.txtContactNum)
-        Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.txtAddress)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Controls.Add(Me.txtMiddleName)
-        Me.Panel2.Controls.Add(Me.txtLastName)
-        Me.Panel2.Controls.Add(Me.txtFirstName)
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Controls.Add(Me.dtpBirthdate)
-        Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.cmbSex)
-        Me.Panel2.Controls.Add(Me.cmbSuffix)
-        Me.Panel2.Controls.Add(Me.Label14)
+        Me.Panel2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel2.Location = New System.Drawing.Point(12, 12)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(485, 601)
         Me.Panel2.TabIndex = 80
         '
-        'cmbUserType
-        '
-        Me.cmbUserType.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbUserType.FormattingEnabled = True
-        Me.cmbUserType.Items.AddRange(New Object() {"1", "2"})
-        Me.cmbUserType.Location = New System.Drawing.Point(186, 483)
-        Me.cmbUserType.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.cmbUserType.Name = "cmbUserType"
-        Me.cmbUserType.Size = New System.Drawing.Size(221, 26)
-        Me.cmbUserType.TabIndex = 65
-        '
         'Label12
         '
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label12.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(60, 482)
+        Me.Label12.Location = New System.Drawing.Point(12, 403)
         Me.Label12.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(120, 26)
@@ -117,13 +87,13 @@ Partial Class NewUser
         '
         'cmbPosition
         '
-        Me.cmbPosition.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbPosition.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbPosition.FormattingEnabled = True
         Me.cmbPosition.Items.AddRange(New Object() {"Chairman", "Secretary", "Kagawad"})
-        Me.cmbPosition.Location = New System.Drawing.Point(186, 448)
+        Me.cmbPosition.Location = New System.Drawing.Point(138, 369)
         Me.cmbPosition.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cmbPosition.Name = "cmbPosition"
-        Me.cmbPosition.Size = New System.Drawing.Size(220, 26)
+        Me.cmbPosition.Size = New System.Drawing.Size(220, 27)
         Me.cmbPosition.TabIndex = 63
         '
         'linkClose
@@ -132,7 +102,7 @@ Partial Class NewUser
         Me.linkClose.AutoSize = True
         Me.linkClose.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.linkClose.LinkColor = System.Drawing.Color.Silver
-        Me.linkClose.Location = New System.Drawing.Point(219, 576)
+        Me.linkClose.Location = New System.Drawing.Point(198, 576)
         Me.linkClose.Name = "linkClose"
         Me.linkClose.Size = New System.Drawing.Size(36, 15)
         Me.linkClose.TabIndex = 62
@@ -142,9 +112,9 @@ Partial Class NewUser
         'Label1
         '
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(60, 379)
+        Me.Label1.Location = New System.Drawing.Point(12, 300)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(122, 26)
@@ -154,8 +124,8 @@ Partial Class NewUser
         '
         'txtUsername
         '
-        Me.txtUsername.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(187, 378)
+        Me.txtUsername.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(139, 299)
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(220, 27)
@@ -163,8 +133,8 @@ Partial Class NewUser
         '
         'txtPassword
         '
-        Me.txtPassword.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(186, 413)
+        Me.txtPassword.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(138, 334)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -174,9 +144,9 @@ Partial Class NewUser
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(61, 414)
+        Me.Label2.Location = New System.Drawing.Point(13, 335)
         Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(120, 26)
@@ -187,9 +157,9 @@ Partial Class NewUser
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(61, 448)
+        Me.Label8.Location = New System.Drawing.Point(13, 369)
         Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(121, 26)
@@ -204,7 +174,7 @@ Partial Class NewUser
         Me.btnCreate.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCreate.ForeColor = System.Drawing.Color.White
         Me.btnCreate.Image = CType(resources.GetObject("btnCreate.Image"), System.Drawing.Image)
-        Me.btnCreate.Location = New System.Drawing.Point(140, 525)
+        Me.btnCreate.Location = New System.Drawing.Point(130, 534)
         Me.btnCreate.Name = "btnCreate"
         Me.btnCreate.Size = New System.Drawing.Size(186, 39)
         Me.btnCreate.TabIndex = 55
@@ -215,8 +185,8 @@ Partial Class NewUser
         '
         'txtContactNum
         '
-        Me.txtContactNum.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContactNum.Location = New System.Drawing.Point(187, 308)
+        Me.txtContactNum.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactNum.Location = New System.Drawing.Point(139, 229)
         Me.txtContactNum.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtContactNum.Name = "txtContactNum"
         Me.txtContactNum.Size = New System.Drawing.Size(221, 27)
@@ -225,9 +195,9 @@ Partial Class NewUser
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(61, 309)
+        Me.Label10.Location = New System.Drawing.Point(13, 230)
         Me.Label10.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(121, 25)
@@ -237,8 +207,8 @@ Partial Class NewUser
         '
         'txtAddress
         '
-        Me.txtAddress.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(187, 343)
+        Me.txtAddress.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(139, 264)
         Me.txtAddress.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtAddress.Multiline = True
         Me.txtAddress.Name = "txtAddress"
@@ -248,9 +218,9 @@ Partial Class NewUser
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(61, 100)
+        Me.Label3.Location = New System.Drawing.Point(13, 21)
         Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(121, 26)
@@ -261,9 +231,9 @@ Partial Class NewUser
         'Label11
         '
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label11.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(60, 343)
+        Me.Label11.Location = New System.Drawing.Point(12, 264)
         Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(122, 28)
@@ -273,8 +243,8 @@ Partial Class NewUser
         '
         'txtMiddleName
         '
-        Me.txtMiddleName.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMiddleName.Location = New System.Drawing.Point(187, 170)
+        Me.txtMiddleName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMiddleName.Location = New System.Drawing.Point(139, 91)
         Me.txtMiddleName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtMiddleName.Name = "txtMiddleName"
         Me.txtMiddleName.Size = New System.Drawing.Size(221, 27)
@@ -282,8 +252,8 @@ Partial Class NewUser
         '
         'txtLastName
         '
-        Me.txtLastName.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLastName.Location = New System.Drawing.Point(187, 100)
+        Me.txtLastName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLastName.Location = New System.Drawing.Point(139, 21)
         Me.txtLastName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(221, 27)
@@ -291,8 +261,8 @@ Partial Class NewUser
         '
         'txtFirstName
         '
-        Me.txtFirstName.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFirstName.Location = New System.Drawing.Point(187, 135)
+        Me.txtFirstName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstName.Location = New System.Drawing.Point(139, 56)
         Me.txtFirstName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(221, 27)
@@ -301,9 +271,9 @@ Partial Class NewUser
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(61, 136)
+        Me.Label4.Location = New System.Drawing.Point(13, 57)
         Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(121, 26)
@@ -314,9 +284,9 @@ Partial Class NewUser
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(61, 171)
+        Me.Label5.Location = New System.Drawing.Point(13, 92)
         Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(121, 26)
@@ -327,9 +297,9 @@ Partial Class NewUser
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(61, 274)
+        Me.Label6.Location = New System.Drawing.Point(13, 195)
         Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(121, 25)
@@ -340,9 +310,9 @@ Partial Class NewUser
         'dtpBirthdate
         '
         Me.dtpBirthdate.CustomFormat = "yyyy-MM-dd"
-        Me.dtpBirthdate.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpBirthdate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpBirthdate.Location = New System.Drawing.Point(187, 273)
+        Me.dtpBirthdate.Location = New System.Drawing.Point(139, 194)
         Me.dtpBirthdate.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.dtpBirthdate.Name = "dtpBirthdate"
         Me.dtpBirthdate.Size = New System.Drawing.Size(221, 27)
@@ -352,9 +322,9 @@ Partial Class NewUser
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(61, 239)
+        Me.Label7.Location = New System.Drawing.Point(13, 160)
         Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(121, 25)
@@ -364,32 +334,32 @@ Partial Class NewUser
         '
         'cmbSex
         '
-        Me.cmbSex.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSex.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbSex.FormattingEnabled = True
         Me.cmbSex.Items.AddRange(New Object() {"Male", "Female"})
-        Me.cmbSex.Location = New System.Drawing.Point(187, 239)
+        Me.cmbSex.Location = New System.Drawing.Point(139, 160)
         Me.cmbSex.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cmbSex.Name = "cmbSex"
-        Me.cmbSex.Size = New System.Drawing.Size(221, 26)
+        Me.cmbSex.Size = New System.Drawing.Size(221, 27)
         Me.cmbSex.TabIndex = 36
         '
         'cmbSuffix
         '
-        Me.cmbSuffix.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSuffix.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbSuffix.FormattingEnabled = True
         Me.cmbSuffix.Items.AddRange(New Object() {"N/A", "Jr.", "Sr.", "I", "II", "III", "IV", "V", "Others"})
-        Me.cmbSuffix.Location = New System.Drawing.Point(187, 205)
+        Me.cmbSuffix.Location = New System.Drawing.Point(139, 126)
         Me.cmbSuffix.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cmbSuffix.Name = "cmbSuffix"
-        Me.cmbSuffix.Size = New System.Drawing.Size(221, 26)
+        Me.cmbSuffix.Size = New System.Drawing.Size(221, 27)
         Me.cmbSuffix.TabIndex = 34
         '
         'Label14
         '
         Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label14.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(61, 206)
+        Me.Label14.Location = New System.Drawing.Point(13, 127)
         Me.Label14.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(121, 25)
@@ -429,6 +399,67 @@ Partial Class NewUser
         Me.lblBIS.TabIndex = 1
         Me.lblBIS.Text = "CREATE ACCOUNT FORM"
         '
+        'gbUser
+        '
+        Me.gbUser.Controls.Add(Me.rdouser)
+        Me.gbUser.Controls.Add(Me.rdoadmin)
+        Me.gbUser.Controls.Add(Me.Label12)
+        Me.gbUser.Controls.Add(Me.cmbPosition)
+        Me.gbUser.Controls.Add(Me.Label1)
+        Me.gbUser.Controls.Add(Me.txtUsername)
+        Me.gbUser.Controls.Add(Me.txtPassword)
+        Me.gbUser.Controls.Add(Me.Label2)
+        Me.gbUser.Controls.Add(Me.Label8)
+        Me.gbUser.Controls.Add(Me.txtContactNum)
+        Me.gbUser.Controls.Add(Me.Label10)
+        Me.gbUser.Controls.Add(Me.txtAddress)
+        Me.gbUser.Controls.Add(Me.Label3)
+        Me.gbUser.Controls.Add(Me.Label11)
+        Me.gbUser.Controls.Add(Me.txtMiddleName)
+        Me.gbUser.Controls.Add(Me.txtLastName)
+        Me.gbUser.Controls.Add(Me.txtFirstName)
+        Me.gbUser.Controls.Add(Me.Label4)
+        Me.gbUser.Controls.Add(Me.Label5)
+        Me.gbUser.Controls.Add(Me.Label6)
+        Me.gbUser.Controls.Add(Me.dtpBirthdate)
+        Me.gbUser.Controls.Add(Me.Label7)
+        Me.gbUser.Controls.Add(Me.cmbSex)
+        Me.gbUser.Controls.Add(Me.cmbSuffix)
+        Me.gbUser.Controls.Add(Me.Label14)
+        Me.gbUser.Location = New System.Drawing.Point(48, 83)
+        Me.gbUser.Name = "gbUser"
+        Me.gbUser.Size = New System.Drawing.Size(377, 442)
+        Me.gbUser.TabIndex = 66
+        Me.gbUser.TabStop = False
+        '
+        'rdouser
+        '
+        Me.rdouser.AutoSize = True
+        Me.rdouser.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdouser.ForeColor = System.Drawing.Color.White
+        Me.rdouser.Location = New System.Drawing.Point(217, 406)
+        Me.rdouser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdouser.Name = "rdouser"
+        Me.rdouser.Size = New System.Drawing.Size(57, 23)
+        Me.rdouser.TabIndex = 97
+        Me.rdouser.TabStop = True
+        Me.rdouser.Text = "User"
+        Me.rdouser.UseVisualStyleBackColor = True
+        '
+        'rdoadmin
+        '
+        Me.rdoadmin.AutoSize = True
+        Me.rdoadmin.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoadmin.ForeColor = System.Drawing.Color.White
+        Me.rdoadmin.Location = New System.Drawing.Point(142, 406)
+        Me.rdoadmin.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdoadmin.Name = "rdoadmin"
+        Me.rdoadmin.Size = New System.Drawing.Size(68, 23)
+        Me.rdoadmin.TabIndex = 98
+        Me.rdoadmin.TabStop = True
+        Me.rdoadmin.Text = "Admin"
+        Me.rdoadmin.UseVisualStyleBackColor = True
+        '
         'NewUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -445,6 +476,8 @@ Partial Class NewUser
         Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.gbUser.ResumeLayout(False)
+        Me.gbUser.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -477,5 +510,7 @@ Partial Class NewUser
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents lblBIS As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents cmbUserType As System.Windows.Forms.ComboBox
+    Friend WithEvents gbUser As System.Windows.Forms.GroupBox
+    Friend WithEvents rdouser As System.Windows.Forms.RadioButton
+    Friend WithEvents rdoadmin As System.Windows.Forms.RadioButton
 End Class
