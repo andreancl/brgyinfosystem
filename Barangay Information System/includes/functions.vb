@@ -23,4 +23,15 @@
             End If
         Next
     End Sub
+    Public Sub closeChildForm()
+        For Each frm As Form In Dashboard.MdiChildren()
+            frm.Close()
+        Next
+    End Sub
+    Public Sub showForm(frm As Form)
+        With frm
+            .MdiParent = Dashboard
+            .Show()
+        End With
+    End Sub
 End Module

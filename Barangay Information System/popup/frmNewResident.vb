@@ -11,7 +11,9 @@
                     rdo = "Female"
                 End If
 
-                query = "insert into residents(ResidentId,LastName,FirstName,MiddleName,Suffix,Sex,Birthdate,Birthplace,CivilStatus,Religion, Nationality,ContactNo,Address) values ('" & resident_id & "','" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "', '" & cmbSuffix.Text & "', '" & rdo & "', '" & dtpBirthdate.Text & "', '" & txtBirthplace.Text & "','" & cmbCivilStatus.Text & "', '" & txtReligion.Text & "', '" & txtNationality.Text & "', '" & txtContactNum.Text & "', '" & txtAddress.Text & "')"
+            query = "INSERT INTO residents (`ResidentId`, `LastName`, `FirstName`, `MiddleName`" _
+                & ", `Suffix`, `Sex`, `Birthdate`, `Birthplace`, `CivilStatus`, `Religion`" _
+                & ", `Nationality`, `ContactNo`, `Address`) VALUES ('" & resident_id & "','" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "', '" & cmbSuffix.Text & "', '" & rdo & "', '" & dtpBirthdate.Text & "', '" & txtBirthplace.Text & "','" & cmbCivilStatus.Text & "', '" & txtReligion.Text & "', '" & txtNationality.Text & "', '" & txtContactNum.Text & "', '" & txtAddress.Text & "')"
                 create(query, txtFirstName.Text & " " & txtLastName.Text)
            
             Resident.load_ResidentInfo()

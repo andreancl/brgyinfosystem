@@ -30,7 +30,6 @@ C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\De
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\Debug\Guna.UI.dll
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.frmLogIn.resources
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.frmNewBlotter.resources
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.NewResident.resources
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Blotter.resources
@@ -46,3 +45,4 @@ C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\bin\Debug\
 C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\obj\Debug\Barangay Information System.exe
 C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\obj\Debug\Barangay Information System.xml
 C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\obj\Debug\Barangay Information System.pdb
+C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.NewBlotter.resources

@@ -3,6 +3,7 @@ Module crud
     Public con As MySqlConnection = mysqldb()
     Public cmd As New MySqlCommand
     Public da As New MySqlDataAdapter
+    Public dr As MySqlDataReader
     Public dt As New DataTable
     Public ds As New DataSet
     Public query As String
@@ -11,6 +12,23 @@ Module crud
     Public edit As String
 
 #Region "crud"
+    Public Sub reloadtxt(ByVal query As String)
+        Try
+            con.Open()
+            With cmd
+                .Connection = con
+                .CommandText = query
+            End With
+            dt = New DataTable
+            da = New MySqlDataAdapter(query, con)
+            da.Fill(dt)
+
+        Catch ex As Exception
+            MsgBox(ex.Message & "log")
+        End Try
+        con.Close()
+        da.Dispose()
+    End Sub
     Public Sub create(ByVal query As String, ByVal msgsuccess As String)
         Try
             con.Open()
@@ -31,12 +49,12 @@ Module crud
         con.Close()
     End Sub
 
-    Public Sub createNoMsg(ByVal sql As String)
+    Public Sub createNoMsg(ByVal query As String)
         Try
             con.Open()
             With cmd
                 .Connection = con
-                .CommandText = sql
+                .CommandText = query
                 cmd.ExecuteNonQuery()
 
             End With
@@ -85,30 +103,12 @@ Module crud
         da.Dispose()
     End Sub
 
-    Public Sub reloadtxt(ByVal query As String)
+    Public Sub deletes(ByVal query As String, ByVal msgsuccess As String)
         Try
             con.Open()
             With cmd
                 .Connection = con
                 .CommandText = query
-            End With
-            dt = New DataTable
-            da = New MySqlDataAdapter(query, con)
-            da.Fill(dt)
-
-        Catch ex As Exception
-            MsgBox(ex.Message & "reloadtxt")
-        End Try
-
-        con.Close()
-        da.Dispose()
-    End Sub
-    Public Sub deletes(ByVal sql As String, ByVal msgsuccess As String)
-        Try
-            con.Open()
-            With cmd
-                .Connection = con
-                .CommandText = sql
             End With
             result = cmd.ExecuteNonQuery
             If result = 0 Then

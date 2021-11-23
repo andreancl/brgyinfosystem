@@ -51,4 +51,8 @@ Public Class Resident
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         sysExit.ExitSystem()
     End Sub
+
+    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+        NewUser.Show()
+    End Sub
 End Class

@@ -24,15 +24,16 @@ Partial Class NewUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewUser))
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.gbUser = New System.Windows.Forms.GroupBox()
+        Me.rdouser = New System.Windows.Forms.RadioButton()
+        Me.rdoadmin = New System.Windows.Forms.RadioButton()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.cmbPosition = New System.Windows.Forms.ComboBox()
-        Me.linkClose = New Guna.UI.WinForms.GunaLinkLabel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.btnCreate = New System.Windows.Forms.Button()
         Me.txtContactNum = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtAddress = New System.Windows.Forms.TextBox()
@@ -49,15 +50,14 @@ Partial Class NewUser
         Me.cmbSex = New System.Windows.Forms.ComboBox()
         Me.cmbSuffix = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.linkClose = New Guna.UI.WinForms.GunaLinkLabel()
+        Me.btnCreate = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lblBIS = New System.Windows.Forms.Label()
-        Me.gbUser = New System.Windows.Forms.GroupBox()
-        Me.rdouser = New System.Windows.Forms.RadioButton()
-        Me.rdoadmin = New System.Windows.Forms.RadioButton()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.gbUser.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -71,6 +71,67 @@ Partial Class NewUser
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(485, 601)
         Me.Panel2.TabIndex = 80
+        '
+        'gbUser
+        '
+        Me.gbUser.Controls.Add(Me.rdouser)
+        Me.gbUser.Controls.Add(Me.rdoadmin)
+        Me.gbUser.Controls.Add(Me.Label12)
+        Me.gbUser.Controls.Add(Me.cmbPosition)
+        Me.gbUser.Controls.Add(Me.Label1)
+        Me.gbUser.Controls.Add(Me.txtUsername)
+        Me.gbUser.Controls.Add(Me.txtPassword)
+        Me.gbUser.Controls.Add(Me.Label2)
+        Me.gbUser.Controls.Add(Me.Label8)
+        Me.gbUser.Controls.Add(Me.txtContactNum)
+        Me.gbUser.Controls.Add(Me.Label10)
+        Me.gbUser.Controls.Add(Me.txtAddress)
+        Me.gbUser.Controls.Add(Me.Label3)
+        Me.gbUser.Controls.Add(Me.Label11)
+        Me.gbUser.Controls.Add(Me.txtMiddleName)
+        Me.gbUser.Controls.Add(Me.txtLastName)
+        Me.gbUser.Controls.Add(Me.txtFirstName)
+        Me.gbUser.Controls.Add(Me.Label4)
+        Me.gbUser.Controls.Add(Me.Label5)
+        Me.gbUser.Controls.Add(Me.Label6)
+        Me.gbUser.Controls.Add(Me.dtpBirthdate)
+        Me.gbUser.Controls.Add(Me.Label7)
+        Me.gbUser.Controls.Add(Me.cmbSex)
+        Me.gbUser.Controls.Add(Me.cmbSuffix)
+        Me.gbUser.Controls.Add(Me.Label14)
+        Me.gbUser.Location = New System.Drawing.Point(48, 83)
+        Me.gbUser.Name = "gbUser"
+        Me.gbUser.Size = New System.Drawing.Size(377, 442)
+        Me.gbUser.TabIndex = 66
+        Me.gbUser.TabStop = False
+        '
+        'rdouser
+        '
+        Me.rdouser.AutoSize = True
+        Me.rdouser.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdouser.ForeColor = System.Drawing.Color.White
+        Me.rdouser.Location = New System.Drawing.Point(217, 406)
+        Me.rdouser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdouser.Name = "rdouser"
+        Me.rdouser.Size = New System.Drawing.Size(57, 23)
+        Me.rdouser.TabIndex = 97
+        Me.rdouser.TabStop = True
+        Me.rdouser.Text = "User"
+        Me.rdouser.UseVisualStyleBackColor = True
+        '
+        'rdoadmin
+        '
+        Me.rdoadmin.AutoSize = True
+        Me.rdoadmin.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoadmin.ForeColor = System.Drawing.Color.White
+        Me.rdoadmin.Location = New System.Drawing.Point(142, 406)
+        Me.rdoadmin.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdoadmin.Name = "rdoadmin"
+        Me.rdoadmin.Size = New System.Drawing.Size(68, 23)
+        Me.rdoadmin.TabIndex = 98
+        Me.rdoadmin.TabStop = True
+        Me.rdoadmin.Text = "Admin"
+        Me.rdoadmin.UseVisualStyleBackColor = True
         '
         'Label12
         '
@@ -95,19 +156,6 @@ Partial Class NewUser
         Me.cmbPosition.Name = "cmbPosition"
         Me.cmbPosition.Size = New System.Drawing.Size(220, 27)
         Me.cmbPosition.TabIndex = 63
-        '
-        'linkClose
-        '
-        Me.linkClose.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.linkClose.AutoSize = True
-        Me.linkClose.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.linkClose.LinkColor = System.Drawing.Color.Silver
-        Me.linkClose.Location = New System.Drawing.Point(198, 576)
-        Me.linkClose.Name = "linkClose"
-        Me.linkClose.Size = New System.Drawing.Size(36, 15)
-        Me.linkClose.TabIndex = 62
-        Me.linkClose.TabStop = True
-        Me.linkClose.Text = "Close"
         '
         'Label1
         '
@@ -166,22 +214,6 @@ Partial Class NewUser
         Me.Label8.TabIndex = 58
         Me.Label8.Text = "Position"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'btnCreate
-        '
-        Me.btnCreate.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCreate.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreate.ForeColor = System.Drawing.Color.White
-        Me.btnCreate.Image = CType(resources.GetObject("btnCreate.Image"), System.Drawing.Image)
-        Me.btnCreate.Location = New System.Drawing.Point(130, 534)
-        Me.btnCreate.Name = "btnCreate"
-        Me.btnCreate.Size = New System.Drawing.Size(186, 39)
-        Me.btnCreate.TabIndex = 55
-        Me.btnCreate.Text = "  Create Account"
-        Me.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnCreate.UseVisualStyleBackColor = True
         '
         'txtContactNum
         '
@@ -367,6 +399,35 @@ Partial Class NewUser
         Me.Label14.Text = "Suffix"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'linkClose
+        '
+        Me.linkClose.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.linkClose.AutoSize = True
+        Me.linkClose.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.linkClose.LinkColor = System.Drawing.Color.Silver
+        Me.linkClose.Location = New System.Drawing.Point(198, 576)
+        Me.linkClose.Name = "linkClose"
+        Me.linkClose.Size = New System.Drawing.Size(36, 15)
+        Me.linkClose.TabIndex = 62
+        Me.linkClose.TabStop = True
+        Me.linkClose.Text = "Close"
+        '
+        'btnCreate
+        '
+        Me.btnCreate.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCreate.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCreate.ForeColor = System.Drawing.Color.White
+        Me.btnCreate.Image = CType(resources.GetObject("btnCreate.Image"), System.Drawing.Image)
+        Me.btnCreate.Location = New System.Drawing.Point(130, 534)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(186, 39)
+        Me.btnCreate.TabIndex = 55
+        Me.btnCreate.Text = "  Create Account"
+        Me.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnCreate.UseVisualStyleBackColor = True
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(156, Byte), Integer))
@@ -399,67 +460,6 @@ Partial Class NewUser
         Me.lblBIS.TabIndex = 1
         Me.lblBIS.Text = "CREATE ACCOUNT FORM"
         '
-        'gbUser
-        '
-        Me.gbUser.Controls.Add(Me.rdouser)
-        Me.gbUser.Controls.Add(Me.rdoadmin)
-        Me.gbUser.Controls.Add(Me.Label12)
-        Me.gbUser.Controls.Add(Me.cmbPosition)
-        Me.gbUser.Controls.Add(Me.Label1)
-        Me.gbUser.Controls.Add(Me.txtUsername)
-        Me.gbUser.Controls.Add(Me.txtPassword)
-        Me.gbUser.Controls.Add(Me.Label2)
-        Me.gbUser.Controls.Add(Me.Label8)
-        Me.gbUser.Controls.Add(Me.txtContactNum)
-        Me.gbUser.Controls.Add(Me.Label10)
-        Me.gbUser.Controls.Add(Me.txtAddress)
-        Me.gbUser.Controls.Add(Me.Label3)
-        Me.gbUser.Controls.Add(Me.Label11)
-        Me.gbUser.Controls.Add(Me.txtMiddleName)
-        Me.gbUser.Controls.Add(Me.txtLastName)
-        Me.gbUser.Controls.Add(Me.txtFirstName)
-        Me.gbUser.Controls.Add(Me.Label4)
-        Me.gbUser.Controls.Add(Me.Label5)
-        Me.gbUser.Controls.Add(Me.Label6)
-        Me.gbUser.Controls.Add(Me.dtpBirthdate)
-        Me.gbUser.Controls.Add(Me.Label7)
-        Me.gbUser.Controls.Add(Me.cmbSex)
-        Me.gbUser.Controls.Add(Me.cmbSuffix)
-        Me.gbUser.Controls.Add(Me.Label14)
-        Me.gbUser.Location = New System.Drawing.Point(48, 83)
-        Me.gbUser.Name = "gbUser"
-        Me.gbUser.Size = New System.Drawing.Size(377, 442)
-        Me.gbUser.TabIndex = 66
-        Me.gbUser.TabStop = False
-        '
-        'rdouser
-        '
-        Me.rdouser.AutoSize = True
-        Me.rdouser.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdouser.ForeColor = System.Drawing.Color.White
-        Me.rdouser.Location = New System.Drawing.Point(217, 406)
-        Me.rdouser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.rdouser.Name = "rdouser"
-        Me.rdouser.Size = New System.Drawing.Size(57, 23)
-        Me.rdouser.TabIndex = 97
-        Me.rdouser.TabStop = True
-        Me.rdouser.Text = "User"
-        Me.rdouser.UseVisualStyleBackColor = True
-        '
-        'rdoadmin
-        '
-        Me.rdoadmin.AutoSize = True
-        Me.rdoadmin.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoadmin.ForeColor = System.Drawing.Color.White
-        Me.rdoadmin.Location = New System.Drawing.Point(142, 406)
-        Me.rdoadmin.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.rdoadmin.Name = "rdoadmin"
-        Me.rdoadmin.Size = New System.Drawing.Size(68, 23)
-        Me.rdoadmin.TabIndex = 98
-        Me.rdoadmin.TabStop = True
-        Me.rdoadmin.Text = "Admin"
-        Me.rdoadmin.UseVisualStyleBackColor = True
-        '
         'NewUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -474,10 +474,10 @@ Partial Class NewUser
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.gbUser.ResumeLayout(False)
         Me.gbUser.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

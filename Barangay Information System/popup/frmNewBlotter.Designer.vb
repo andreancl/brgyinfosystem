@@ -26,23 +26,25 @@ Partial Class NewBlotter
         Me.lblBIS = New System.Windows.Forms.Label()
         Me.linkClose = New Guna.UI.WinForms.GunaLinkLabel()
         Me.btnCreate = New System.Windows.Forms.Button()
-        Me.txtContactNum = New System.Windows.Forms.TextBox()
+        Me.txtStatement = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtMiddleName = New System.Windows.Forms.TextBox()
-        Me.txtLastName = New System.Windows.Forms.TextBox()
-        Me.txtFirstName = New System.Windows.Forms.TextBox()
+        Me.txtIncident = New System.Windows.Forms.TextBox()
+        Me.txtComName = New System.Windows.Forms.TextBox()
+        Me.txtDefName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.dtpBirthdate = New System.Windows.Forms.DateTimePicker()
+        Me.dtpIncidentDate = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.dtpTime = New System.Windows.Forms.DateTimePicker()
+        Me.dtpIncidentTime = New System.Windows.Forms.DateTimePicker()
+        Me.gbBlotter = New System.Windows.Forms.GroupBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.gbBlotter.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblBIS
@@ -67,10 +69,10 @@ Partial Class NewBlotter
         Me.btnCreate.Name = "btnCreate"
         Me.btnCreate.UseVisualStyleBackColor = True
         '
-        'txtContactNum
+        'txtStatement
         '
-        resources.ApplyResources(Me.txtContactNum, "txtContactNum")
-        Me.txtContactNum.Name = "txtContactNum"
+        resources.ApplyResources(Me.txtStatement, "txtStatement")
+        Me.txtStatement.Name = "txtStatement"
         '
         'Label10
         '
@@ -100,20 +102,20 @@ Partial Class NewBlotter
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Name = "Label3"
         '
-        'txtMiddleName
+        'txtIncident
         '
-        resources.ApplyResources(Me.txtMiddleName, "txtMiddleName")
-        Me.txtMiddleName.Name = "txtMiddleName"
+        resources.ApplyResources(Me.txtIncident, "txtIncident")
+        Me.txtIncident.Name = "txtIncident"
         '
-        'txtLastName
+        'txtComName
         '
-        resources.ApplyResources(Me.txtLastName, "txtLastName")
-        Me.txtLastName.Name = "txtLastName"
+        resources.ApplyResources(Me.txtComName, "txtComName")
+        Me.txtComName.Name = "txtComName"
         '
-        'txtFirstName
+        'txtDefName
         '
-        resources.ApplyResources(Me.txtFirstName, "txtFirstName")
-        Me.txtFirstName.Name = "txtFirstName"
+        resources.ApplyResources(Me.txtDefName, "txtDefName")
+        Me.txtDefName.Name = "txtDefName"
         '
         'Label4
         '
@@ -129,12 +131,12 @@ Partial Class NewBlotter
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Name = "Label5"
         '
-        'dtpBirthdate
+        'dtpIncidentDate
         '
-        resources.ApplyResources(Me.dtpBirthdate, "dtpBirthdate")
-        Me.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpBirthdate.Name = "dtpBirthdate"
-        Me.dtpBirthdate.Value = New Date(2021, 10, 16, 0, 0, 0, 0)
+        resources.ApplyResources(Me.dtpIncidentDate, "dtpIncidentDate")
+        Me.dtpIncidentDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpIncidentDate.Name = "dtpIncidentDate"
+        Me.dtpIncidentDate.Value = New Date(2021, 10, 16, 0, 0, 0, 0)
         '
         'Label7
         '
@@ -153,30 +155,37 @@ Partial Class NewBlotter
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.dtpTime)
+        Me.Panel2.Controls.Add(Me.gbBlotter)
         Me.Panel2.Controls.Add(Me.linkClose)
         Me.Panel2.Controls.Add(Me.btnCreate)
-        Me.Panel2.Controls.Add(Me.txtContactNum)
-        Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.txtMiddleName)
-        Me.Panel2.Controls.Add(Me.txtLastName)
-        Me.Panel2.Controls.Add(Me.txtFirstName)
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.dtpBirthdate)
-        Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.Label14)
         resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.Name = "Panel2"
         '
-        'dtpTime
+        'dtpIncidentTime
         '
-        Me.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        resources.ApplyResources(Me.dtpTime, "dtpTime")
-        Me.dtpTime.Name = "dtpTime"
+        Me.dtpIncidentTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        resources.ApplyResources(Me.dtpIncidentTime, "dtpIncidentTime")
+        Me.dtpIncidentTime.Name = "dtpIncidentTime"
         '
-        'frmNewBlotter
+        'gbBlotter
+        '
+        Me.gbBlotter.Controls.Add(Me.dtpIncidentTime)
+        Me.gbBlotter.Controls.Add(Me.txtStatement)
+        Me.gbBlotter.Controls.Add(Me.Label10)
+        Me.gbBlotter.Controls.Add(Me.Label3)
+        Me.gbBlotter.Controls.Add(Me.txtIncident)
+        Me.gbBlotter.Controls.Add(Me.txtComName)
+        Me.gbBlotter.Controls.Add(Me.txtDefName)
+        Me.gbBlotter.Controls.Add(Me.Label4)
+        Me.gbBlotter.Controls.Add(Me.Label5)
+        Me.gbBlotter.Controls.Add(Me.dtpIncidentDate)
+        Me.gbBlotter.Controls.Add(Me.Label7)
+        Me.gbBlotter.Controls.Add(Me.Label14)
+        resources.ApplyResources(Me.gbBlotter, "gbBlotter")
+        Me.gbBlotter.Name = "gbBlotter"
+        Me.gbBlotter.TabStop = False
+        '
+        'NewBlotter
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -184,30 +193,33 @@ Partial Class NewBlotter
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Name = "frmNewBlotter"
+        Me.Name = "NewBlotter"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.gbBlotter.ResumeLayout(False)
+        Me.gbBlotter.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents lblBIS As System.Windows.Forms.Label
     Friend WithEvents linkClose As Guna.UI.WinForms.GunaLinkLabel
     Friend WithEvents btnCreate As System.Windows.Forms.Button
-    Friend WithEvents txtContactNum As System.Windows.Forms.TextBox
+    Friend WithEvents txtStatement As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtMiddleName As System.Windows.Forms.TextBox
-    Friend WithEvents txtLastName As System.Windows.Forms.TextBox
-    Friend WithEvents txtFirstName As System.Windows.Forms.TextBox
+    Friend WithEvents txtIncident As System.Windows.Forms.TextBox
+    Friend WithEvents txtComName As System.Windows.Forms.TextBox
+    Friend WithEvents txtDefName As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents dtpBirthdate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpIncidentDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents dtpTime As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpIncidentTime As System.Windows.Forms.DateTimePicker
+    Friend WithEvents gbBlotter As System.Windows.Forms.GroupBox
 End Class

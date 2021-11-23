@@ -156,7 +156,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="linkClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 481</value>
+    <value>312, 478</value>
   </data>
   <data name="linkClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 15</value>
@@ -205,7 +205,7 @@
 </value>
   </data>
   <data name="btnCreate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 433</value>
+    <value>249, 419</value>
   </data>
   <data name="btnCreate.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 45</value>
@@ -234,35 +234,35 @@
   <data name="&gt;&gt;btnCreate.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="txtContactNum.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtStatement.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="txtContactNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 211</value>
+  <data name="txtStatement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 132</value>
   </data>
-  <data name="txtContactNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtStatement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
   </data>
-  <data name="txtContactNum.Multiline" type="System.Boolean, mscorlib">
+  <data name="txtStatement.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtContactNum.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtStatement.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 159</value>
   </data>
-  <data name="txtContactNum.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtStatement.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
-  <data name="&gt;&gt;txtContactNum.Name" xml:space="preserve">
-    <value>txtContactNum</value>
+  <data name="&gt;&gt;txtStatement.Name" xml:space="preserve">
+    <value>txtStatement</value>
   </data>
-  <data name="&gt;&gt;txtContactNum.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtStatement.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtContactNum.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;txtStatement.Parent" xml:space="preserve">
+    <value>gbBlotter</value>
   </data>
-  <data name="&gt;&gt;txtContactNum.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;txtStatement.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="Label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 14.25pt, style=Bold</value>
@@ -271,7 +271,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 174</value>
+    <value>358, 95</value>
   </data>
   <data name="Label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -295,10 +295,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label10.Parent" xml:space="preserve">
-    <value>Panel2</value>
+    <value>gbBlotter</value>
   </data>
   <data name="&gt;&gt;Label10.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -355,7 +355,7 @@
     <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 104</value>
+    <value>19, 25</value>
   </data>
   <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -379,97 +379,97 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
-    <value>Panel2</value>
+    <value>gbBlotter</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
-  <data name="txtMiddleName.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtIncident.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="txtMiddleName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 135</value>
+  <data name="txtIncident.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 56</value>
   </data>
-  <data name="txtMiddleName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtIncident.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
   </data>
-  <data name="txtMiddleName.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtIncident.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 27</value>
   </data>
-  <data name="txtMiddleName.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtIncident.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="&gt;&gt;txtMiddleName.Name" xml:space="preserve">
-    <value>txtMiddleName</value>
+  <data name="&gt;&gt;txtIncident.Name" xml:space="preserve">
+    <value>txtIncident</value>
   </data>
-  <data name="&gt;&gt;txtMiddleName.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtIncident.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtMiddleName.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;txtIncident.Parent" xml:space="preserve">
+    <value>gbBlotter</value>
   </data>
-  <data name="&gt;&gt;txtMiddleName.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;txtIncident.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="txtLastName.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtComName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="txtLastName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 135</value>
+  <data name="txtComName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 56</value>
   </data>
-  <data name="txtLastName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtComName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
   </data>
-  <data name="txtLastName.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtComName.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 27</value>
   </data>
-  <data name="txtLastName.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtComName.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="&gt;&gt;txtLastName.Name" xml:space="preserve">
-    <value>txtLastName</value>
+  <data name="&gt;&gt;txtComName.Name" xml:space="preserve">
+    <value>txtComName</value>
   </data>
-  <data name="&gt;&gt;txtLastName.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtComName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtLastName.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;txtComName.Parent" xml:space="preserve">
+    <value>gbBlotter</value>
   </data>
-  <data name="&gt;&gt;txtLastName.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;txtComName.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="txtFirstName.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtDefName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="txtFirstName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 204</value>
+  <data name="txtDefName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 125</value>
   </data>
-  <data name="txtFirstName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtDefName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
   </data>
-  <data name="txtFirstName.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtDefName.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 27</value>
   </data>
-  <data name="txtFirstName.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtDefName.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="&gt;&gt;txtFirstName.Name" xml:space="preserve">
-    <value>txtFirstName</value>
+  <data name="&gt;&gt;txtDefName.Name" xml:space="preserve">
+    <value>txtDefName</value>
   </data>
-  <data name="&gt;&gt;txtFirstName.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtDefName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtFirstName.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;txtDefName.Parent" xml:space="preserve">
+    <value>gbBlotter</value>
   </data>
-  <data name="&gt;&gt;txtFirstName.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;txtDefName.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 173</value>
+    <value>19, 94</value>
   </data>
   <data name="Label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -493,10 +493,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
-    <value>Panel2</value>
+    <value>gbBlotter</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 14.25pt, style=Bold</value>
@@ -505,7 +505,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 104</value>
+    <value>358, 25</value>
   </data>
   <data name="Label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -529,46 +529,46 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
-    <value>Panel2</value>
+    <value>gbBlotter</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
-  <data name="dtpBirthdate.CustomFormat" xml:space="preserve">
+  <data name="dtpIncidentDate.CustomFormat" xml:space="preserve">
     <value>yyyy-MM-dd</value>
   </data>
-  <data name="dtpBirthdate.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="dtpIncidentDate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="dtpBirthdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 274</value>
+  <data name="dtpIncidentDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 195</value>
   </data>
-  <data name="dtpBirthdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="dtpIncidentDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
   </data>
-  <data name="dtpBirthdate.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dtpIncidentDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 27</value>
   </data>
-  <data name="dtpBirthdate.TabIndex" type="System.Int32, mscorlib">
+  <data name="dtpIncidentDate.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="&gt;&gt;dtpBirthdate.Name" xml:space="preserve">
-    <value>dtpBirthdate</value>
+  <data name="&gt;&gt;dtpIncidentDate.Name" xml:space="preserve">
+    <value>dtpIncidentDate</value>
   </data>
-  <data name="&gt;&gt;dtpBirthdate.Type" xml:space="preserve">
+  <data name="&gt;&gt;dtpIncidentDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dtpBirthdate.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;dtpIncidentDate.Parent" xml:space="preserve">
+    <value>gbBlotter</value>
   </data>
-  <data name="&gt;&gt;dtpBirthdate.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;dtpIncidentDate.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 313</value>
+    <value>19, 234</value>
   </data>
   <data name="Label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -592,16 +592,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
-    <value>Panel2</value>
+    <value>gbBlotter</value>
   </data>
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="Label14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="Label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 243</value>
+    <value>19, 164</value>
   </data>
   <data name="Label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -625,33 +625,54 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label14.Parent" xml:space="preserve">
-    <value>Panel2</value>
+    <value>gbBlotter</value>
   </data>
   <data name="&gt;&gt;Label14.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
-  <data name="dtpTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 343</value>
+  <data name="dtpIncidentTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 264</value>
   </data>
-  <data name="dtpTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="dtpIncidentTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="dtpTime.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dtpIncidentTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 27</value>
   </data>
-  <data name="dtpTime.TabIndex" type="System.Int32, mscorlib">
+  <data name="dtpIncidentTime.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
   </data>
-  <data name="&gt;&gt;dtpTime.Name" xml:space="preserve">
-    <value>dtpTime</value>
+  <data name="&gt;&gt;dtpIncidentTime.Name" xml:space="preserve">
+    <value>dtpIncidentTime</value>
   </data>
-  <data name="&gt;&gt;dtpTime.Type" xml:space="preserve">
+  <data name="&gt;&gt;dtpIncidentTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dtpTime.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dtpIncidentTime.Parent" xml:space="preserve">
+    <value>gbBlotter</value>
+  </data>
+  <data name="&gt;&gt;dtpIncidentTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbBlotter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 88</value>
+  </data>
+  <data name="gbBlotter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>661, 307</value>
+  </data>
+  <data name="gbBlotter.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;gbBlotter.Name" xml:space="preserve">
+    <value>gbBlotter</value>
+  </data>
+  <data name="&gt;&gt;gbBlotter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbBlotter.Parent" xml:space="preserve">
     <value>Panel2</value>
   </data>
-  <data name="&gt;&gt;dtpTime.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;gbBlotter.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Panel2.Font" type="System.Drawing.Font, System.Drawing">
@@ -691,7 +712,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmNewBlotter</value>
+    <value>NewBlotter</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

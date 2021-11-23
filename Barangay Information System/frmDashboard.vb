@@ -1,16 +1,16 @@
 ﻿Public Class Dashboard
 
     Private Sub btnResident_Click(sender As Object, e As EventArgs) Handles btnResident.Click
-        Resident.Show()
-        Me.Close()
+        closeChildForm()
+        showForm(Resident)
     End Sub
 
     Private Sub btnBlotter_Click(sender As Object, e As EventArgs) Handles btnBlotter.Click
-        Blotter.Show()
-        Me.Close()
+        closeChildForm()
+        showForm(Blotter)
     End Sub
 
-    Private Sub btnUser_Click(sender As Object, e As EventArgs)
+    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
         NewUser.Show()
     End Sub
 

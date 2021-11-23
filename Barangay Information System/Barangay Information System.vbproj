@@ -124,16 +124,16 @@
     <Compile Include="frmDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewBlotter.Designer.vb">
+    <Compile Include="popup\frmNewBlotter.Designer.vb">
       <DependentUpon>frmNewBlotter.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmNewBlotter.vb">
+    <Compile Include="popup\frmNewBlotter.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewResident.Designer.vb">
+    <Compile Include="popup\frmNewResident.Designer.vb">
       <DependentUpon>frmNewResident.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmNewResident.vb">
+    <Compile Include="popup\frmNewResident.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmResident.Designer.vb">
@@ -164,12 +164,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="frmNewUser.Designer.vb">
+    <Compile Include="popup\frmNewUser.Designer.vb">
       <DependentUpon>frmNewUser.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmNewUser.vb">
+    <Compile Include="popup\frmNewUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="includes\users.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmLogIn.resx">
@@ -178,10 +179,10 @@
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewBlotter.resx">
+    <EmbeddedResource Include="popup\frmNewBlotter.resx">
       <DependentUpon>frmNewBlotter.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewResident.resx">
+    <EmbeddedResource Include="popup\frmNewResident.resx">
       <DependentUpon>frmNewResident.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmResident.resx">
@@ -196,7 +197,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewUser.resx">
+    <EmbeddedResource Include="popup\frmNewUser.resx">
       <DependentUpon>frmNewUser.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

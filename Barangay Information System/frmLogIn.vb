@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frmLogIn
+    Public con As MySqlConnection = mysqldb()
     Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         anima1.ShowSync(l1)
@@ -15,37 +16,26 @@ Public Class frmLogIn
     End Sub
 
     Private Sub btnLogIn_Click(sender As Object, e As EventArgs) Handles btnLogIn.Click
-        Dim connection As New Connections 'Called the Class Connection'
-        connection.OpenDBConnection() 'Called the Method OpenDBConnection'
-        Dim Reader As MySqlDataReader
-        Dim Command As New MySqlCommand
-        Try
-            Dim Query As String
-            Query = "select * from users where Username='" & txtUserName.Text & "'and Password='" & txtPassword.Text & "'"
-            Command = New MySqlCommand(Query, connection.GetDBConnection()) 'Called the Method GetDBConnection that will return the actual DB Connection'
-            Reader = Command.ExecuteReader
-            Dim count As Integer
-            count = 0
-            While Reader.Read
-                count = count + 1
-            End While
-            If count = 1 Then
-                MessageBox.Show("Welcome to Barangay Information System")
-                Dashboard.Show()
-                Me.Hide()
-            ElseIf count > 1 Then
-                MessageBox.Show("Username and Password. Please Try Again")
-            Else
-                MessageBox.Show("Invalid Username and Password.")
-            End If
-            connection.CloseDBConnection() 'Called the Method CloseDBConnection'
-        Catch ex As MySqlException
-            MessageBox.Show(ex.Message)
-        Finally
-            connection.DisposeDBConnection() 'Called the Method DisposeDBConnection'
-        End Try
+        LogIn(txtUserName.Text, txtPassword.Text)
+        If Not UserExists() Then
+            MsgBox("User does not exist!")
+        End If
     End Sub
-
+    Private Function UserExists() As Boolean
+        Dim Result As Boolean = False
+        Try
+            con.Open()
+            Dim query As String
+            query = "SELECT * FROM users where Username= '" & txtUserName.Text & "' and Password = '" & txtPassword.Text & "' "
+            cmd = New MySqlCommand(query, con)
+            If cmd.ExecuteScalar() > 0 Then Result = True
+            cmd.Dispose()
+        Catch ex As Exception
+        Finally
+            con.close()
+        End Try
+        Return Result
+    End Function
     Private Sub linkaccnt_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkaccnt.LinkClicked
         anima1.HideSync(p2)
         anima1.ShowSync(p3)

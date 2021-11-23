@@ -1,8 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Blotter
-    Dim command As MySqlCommand
-
     Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
         Dashboard.Show()
         Me.Close()
@@ -19,5 +17,9 @@ Public Class Blotter
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         sysExit.ExitSystem()
+    End Sub
+
+    Private Sub btnNewBlotter_Click(sender As Object, e As EventArgs) Handles btnNewBlotter.Click
+        NewBlotter.Show()
     End Sub
 End Class
