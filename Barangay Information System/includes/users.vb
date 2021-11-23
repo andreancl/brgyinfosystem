@@ -34,7 +34,7 @@ Module user
                     frmLogIn.Hide()
                 End If
             Else
-                MessageBox.Show("You Don't Have Permission To Login System At This Time")
+                MessageBox.Show("Login Failed. Try again.")
             End If
             dr.Close()
             cmd.Dispose()

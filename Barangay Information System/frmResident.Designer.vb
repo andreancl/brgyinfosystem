@@ -27,12 +27,12 @@ Partial Class Resident
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Resident))
         Me.dgvResidentRecords = New System.Windows.Forms.DataGridView()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSearchBox = New System.Windows.Forms.TextBox()
         Me.btnNewResident = New System.Windows.Forms.Button()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.tsEdit = New System.Windows.Forms.ToolStripButton()
         Me.tsDelete = New System.Windows.Forms.ToolStripButton()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.dgvResidentRecords, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -44,6 +44,10 @@ Partial Class Resident
         Me.dgvResidentRecords.AllowUserToDeleteRows = False
         Me.dgvResidentRecords.AllowUserToResizeColumns = False
         Me.dgvResidentRecords.AllowUserToResizeRows = False
+        Me.dgvResidentRecords.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvResidentRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvResidentRecords.BackgroundColor = System.Drawing.Color.PaleTurquoise
         Me.dgvResidentRecords.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -58,10 +62,12 @@ Partial Class Resident
         Me.dgvResidentRecords.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgvResidentRecords.Location = New System.Drawing.Point(22, 92)
         Me.dgvResidentRecords.Name = "dgvResidentRecords"
+        Me.dgvResidentRecords.RowHeadersVisible = False
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.dgvResidentRecords.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvResidentRecords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvResidentRecords.Size = New System.Drawing.Size(1060, 470)
+        Me.dgvResidentRecords.StandardTab = True
         Me.dgvResidentRecords.TabIndex = 8
         '
         'Panel5
@@ -74,6 +80,17 @@ Partial Class Resident
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1060, 48)
         Me.Panel5.TabIndex = 9
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(16, 14)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(52, 19)
+        Me.Label1.TabIndex = 78
+        Me.Label1.Text = "Search"
         '
         'txtSearchBox
         '
@@ -129,17 +146,6 @@ Partial Class Resident
         Me.tsDelete.Name = "tsDelete"
         Me.tsDelete.Size = New System.Drawing.Size(29, 32)
         Me.tsDelete.Text = "Delete"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(16, 14)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 19)
-        Me.Label1.TabIndex = 78
-        Me.Label1.Text = "Search"
         '
         'Resident
         '

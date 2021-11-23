@@ -40,8 +40,8 @@ Partial Class NewBlotter
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.dtpIncidentTime = New System.Windows.Forms.DateTimePicker()
         Me.gbBlotter = New System.Windows.Forms.GroupBox()
+        Me.dtpIncidentTime = New System.Windows.Forms.DateTimePicker()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.gbBlotter.SuspendLayout()
@@ -161,12 +161,6 @@ Partial Class NewBlotter
         resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.Name = "Panel2"
         '
-        'dtpIncidentTime
-        '
-        Me.dtpIncidentTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        resources.ApplyResources(Me.dtpIncidentTime, "dtpIncidentTime")
-        Me.dtpIncidentTime.Name = "dtpIncidentTime"
-        '
         'gbBlotter
         '
         Me.gbBlotter.Controls.Add(Me.dtpIncidentTime)
@@ -184,6 +178,12 @@ Partial Class NewBlotter
         resources.ApplyResources(Me.gbBlotter, "gbBlotter")
         Me.gbBlotter.Name = "gbBlotter"
         Me.gbBlotter.TabStop = False
+        '
+        'dtpIncidentTime
+        '
+        Me.dtpIncidentTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        resources.ApplyResources(Me.dtpIncidentTime, "dtpIncidentTime")
+        Me.dtpIncidentTime.Name = "dtpIncidentTime"
         '
         'NewBlotter
         '
