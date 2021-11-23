@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Blotter
+<<<<<<< Updated upstream
     Private Sub Blotter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         load_BlotterRecords()
 
@@ -26,5 +27,25 @@ Public Class Blotter
 
     Private Sub btnNewBlotter_Click(sender As Object, e As EventArgs) Handles btnNewBlotter.Click
         NewBlotter.Show()
+=======
+    Dim command As MySqlCommand
+
+    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+        Dashboard.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnResident_Click(sender As Object, e As EventArgs) Handles btnResident.Click
+        Resident.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnUser_Click(sender As Object, e As EventArgs)
+        NewUser.Show()
+    End Sub
+
+    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
+        sysExit.ExitSystem()
+>>>>>>> Stashed changes
     End Sub
 End Class

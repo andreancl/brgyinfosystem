@@ -1,7 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frmLogIn
+<<<<<<< Updated upstream
     Public con As MySqlConnection = mysqldb()
+=======
+>>>>>>> Stashed changes
     Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         anima1.ShowSync(l1)
@@ -16,6 +19,7 @@ Public Class frmLogIn
     End Sub
 
     Private Sub btnLogIn_Click(sender As Object, e As EventArgs) Handles btnLogIn.Click
+<<<<<<< Updated upstream
         LogIn(txtUserName.Text, txtPassword.Text)
         If Not UserExists() Then
             MsgBox("User does not exist!")
@@ -23,6 +27,12 @@ Public Class frmLogIn
     End Sub
     Private Function UserExists() As Boolean
         Dim Result As Boolean = False
+=======
+        Dim connection As New Connections 'Called the Class Connection'
+        connection.OpenDBConnection() 'Called the Method OpenDBConnection'
+        Dim Reader As MySqlDataReader
+        Dim Command As New MySqlCommand
+>>>>>>> Stashed changes
         Try
             con.Open()
             Dim query As String

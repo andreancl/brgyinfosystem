@@ -54,6 +54,10 @@ Partial Class NewResident
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblResId = New System.Windows.Forms.Label()
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
+=======
+        Me.Label2 = New System.Windows.Forms.Label()
+>>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblResTitle = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
@@ -431,6 +435,10 @@ Partial Class NewResident
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(156, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lblResId)
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
+=======
+        Me.Panel1.Controls.Add(Me.Label2)
+>>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.lblResTitle)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
@@ -442,11 +450,27 @@ Partial Class NewResident
         '
         Me.lblResId.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblResId.Font = New System.Drawing.Font("Calibri", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
         Me.lblResId.Location = New System.Drawing.Point(523, 40)
         Me.lblResId.Name = "lblResId"
         Me.lblResId.Size = New System.Drawing.Size(249, 34)
         Me.lblResId.TabIndex = 4
         '
+=======
+        Me.lblResId.Location = New System.Drawing.Point(467, 40)
+        Me.lblResId.Name = "lblResId"
+        Me.lblResId.Size = New System.Drawing.Size(305, 34)
+        Me.lblResId.TabIndex = 4
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(567, 36)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 13)
+        Me.Label2.TabIndex = 3
+        '
+>>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -521,5 +545,9 @@ Partial Class NewResident
     Friend WithEvents cmbCivilStatus As System.Windows.Forms.ComboBox
     Friend WithEvents rdofemale As System.Windows.Forms.RadioButton
     Friend WithEvents rdomale As System.Windows.Forms.RadioButton
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
+=======
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+>>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
     Friend WithEvents lblResId As System.Windows.Forms.Label
 End Class
