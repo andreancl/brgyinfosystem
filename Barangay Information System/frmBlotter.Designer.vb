@@ -26,7 +26,6 @@ Partial Class Blotter
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         Me.btnNewBlotter = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -83,8 +82,6 @@ Partial Class Blotter
         Me.txtSearchBox.Size = New System.Drawing.Size(272, 27)
         Me.txtSearchBox.TabIndex = 79
 =======
-=======
->>>>>>> Stashed changes
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lblBIS = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -336,9 +333,6 @@ Partial Class Blotter
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(256, 64)
         Me.Panel2.TabIndex = 0
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         '
         'dgvBlotterRecords
@@ -348,13 +342,10 @@ Partial Class Blotter
         Me.dgvBlotterRecords.AllowUserToResizeColumns = False
         Me.dgvBlotterRecords.AllowUserToResizeRows = False
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         Me.dgvBlotterRecords.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvBlotterRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         Me.dgvBlotterRecords.BackgroundColor = System.Drawing.Color.PaleTurquoise
@@ -369,7 +360,6 @@ Partial Class Blotter
         Me.dgvBlotterRecords.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvBlotterRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         Me.dgvBlotterRecords.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgvBlotterRecords.Location = New System.Drawing.Point(22, 92)
         Me.dgvBlotterRecords.Name = "dgvBlotterRecords"
@@ -383,8 +373,6 @@ Partial Class Blotter
         Me.dgvBlotterRecords.TabIndex = 9
         '
 =======
-=======
->>>>>>> Stashed changes
         Me.dgvBlotterRecords.Location = New System.Drawing.Point(296, 194)
         Me.dgvBlotterRecords.Name = "dgvBlotterRecords"
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
@@ -428,15 +416,11 @@ Partial Class Blotter
         Me.btnNewBlotter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnNewBlotter.UseVisualStyleBackColor = True
         '
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         'Blotter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         Me.ClientSize = New System.Drawing.Size(1106, 612)
         Me.ControlBox = False
@@ -459,8 +443,6 @@ Partial Class Blotter
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtSearchBox As System.Windows.Forms.TextBox
 =======
-=======
->>>>>>> Stashed changes
         Me.ClientSize = New System.Drawing.Size(1363, 749)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.dgvBlotterRecords)
@@ -499,8 +481,5 @@ Partial Class Blotter
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents txtSearchBox As System.Windows.Forms.TextBox
     Friend WithEvents btnNewBlotter As System.Windows.Forms.Button
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 End Class

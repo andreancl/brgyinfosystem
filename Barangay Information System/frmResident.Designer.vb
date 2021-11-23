@@ -41,9 +41,6 @@ Partial Class Resident
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         Me.dgvResidentRecords = New System.Windows.Forms.DataGridView()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -54,17 +51,11 @@ Partial Class Resident
         Me.tsEdit = New System.Windows.Forms.ToolStripButton()
         Me.tsDelete = New System.Windows.Forms.ToolStripButton()
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 =======
-=======
->>>>>>> Stashed changes
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         CType(Me.dgvResidentRecords, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
@@ -299,9 +290,6 @@ Partial Class Resident
         Me.Panel2.Size = New System.Drawing.Size(256, 64)
         Me.Panel2.TabIndex = 0
         '
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         'dgvResidentRecords
         '
@@ -310,13 +298,10 @@ Partial Class Resident
         Me.dgvResidentRecords.AllowUserToResizeColumns = False
         Me.dgvResidentRecords.AllowUserToResizeRows = False
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         Me.dgvResidentRecords.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvResidentRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         Me.dgvResidentRecords.BackgroundColor = System.Drawing.Color.PaleTurquoise
@@ -332,7 +317,6 @@ Partial Class Resident
         Me.dgvResidentRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvResidentRecords.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         Me.dgvResidentRecords.Location = New System.Drawing.Point(22, 92)
         Me.dgvResidentRecords.Name = "dgvResidentRecords"
         Me.dgvResidentRecords.RowHeadersVisible = False
@@ -342,17 +326,12 @@ Partial Class Resident
         Me.dgvResidentRecords.Size = New System.Drawing.Size(1060, 470)
         Me.dgvResidentRecords.StandardTab = True
 =======
-=======
->>>>>>> Stashed changes
         Me.dgvResidentRecords.Location = New System.Drawing.Point(296, 194)
         Me.dgvResidentRecords.Name = "dgvResidentRecords"
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.dgvResidentRecords.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvResidentRecords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvResidentRecords.Size = New System.Drawing.Size(1025, 450)
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         Me.dgvResidentRecords.TabIndex = 8
         '
@@ -410,15 +389,9 @@ Partial Class Resident
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(25, 25)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsEdit, Me.tsDelete})
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         Me.ToolStrip1.Location = New System.Drawing.Point(22, 565)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1060, 35)
-=======
-        Me.ToolStrip1.Location = New System.Drawing.Point(295, 647)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1026, 35)
->>>>>>> Stashed changes
 =======
         Me.ToolStrip1.Location = New System.Drawing.Point(295, 647)
         Me.ToolStrip1.Name = "ToolStrip1"
@@ -480,9 +453,6 @@ Partial Class Resident
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         CType(Me.dgvResidentRecords, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
@@ -505,31 +475,22 @@ Partial Class Resident
     Friend WithEvents btnDashboard As System.Windows.Forms.Button
     Friend WithEvents btnServices As System.Windows.Forms.Button
     Friend WithEvents btnResident As System.Windows.Forms.Button
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
     Friend WithEvents dgvResidentRecords As System.Windows.Forms.DataGridView
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents txtSearchBox As System.Windows.Forms.TextBox
     Friend WithEvents btnNewResident As System.Windows.Forms.Button
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents tsEdit As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsDelete As System.Windows.Forms.ToolStripButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
 =======
-=======
->>>>>>> Stashed changes
     Friend WithEvents btnBackup As System.Windows.Forms.Button
     Friend WithEvents btnUser As System.Windows.Forms.Button
     Friend WithEvents btnBlotter As System.Windows.Forms.Button
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents tsEdit As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsDelete As System.Windows.Forms.ToolStripButton
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 End Class

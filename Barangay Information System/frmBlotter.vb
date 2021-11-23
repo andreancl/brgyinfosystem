@@ -2,7 +2,6 @@
 
 Public Class Blotter
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     Private Sub Blotter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         load_BlotterRecords()
 
@@ -29,8 +28,6 @@ Public Class Blotter
     Private Sub btnNewBlotter_Click(sender As Object, e As EventArgs) Handles btnNewBlotter.Click
         NewBlotter.Show()
 =======
-=======
->>>>>>> Stashed changes
     Dim command As MySqlCommand
 
     Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
@@ -49,9 +46,6 @@ Public Class Blotter
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         sysExit.ExitSystem()
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
     End Sub
 End Class

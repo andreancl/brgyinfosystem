@@ -93,11 +93,7 @@
   </dependency>
   <dependency>
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Information System.exe" size="555008">
-=======
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Information System.exe" size="688640">
->>>>>>> Stashed changes
 =======
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Information System.exe" size="688640">
 >>>>>>> Stashed changes
@@ -108,11 +104,7 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         <dsig:DigestValue>P+R4A/5ZvZk+OSSCRoY4vfM5gGklKgXkesHaIvWn1Ko=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>7yEnzDlaBlMhIH2qozSZUFvtZ8BYnlEJXqnZAvtzpDU=</dsig:DigestValue>
->>>>>>> Stashed changes
 =======
         <dsig:DigestValue>7yEnzDlaBlMhIH2qozSZUFvtZ8BYnlEJXqnZAvtzpDU=</dsig:DigestValue>
 >>>>>>> Stashed changes

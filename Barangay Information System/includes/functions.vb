@@ -24,7 +24,6 @@
         Next
     End Sub
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     Public Sub closeChildForm()
         For Each frm As Form In Dashboard.MdiChildren()
             frm.Close()
@@ -36,8 +35,6 @@
             .Show()
         End With
     End Sub
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 End Module

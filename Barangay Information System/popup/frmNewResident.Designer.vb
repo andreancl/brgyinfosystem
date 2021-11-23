@@ -55,10 +55,6 @@ Partial Class NewResident
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblResId = New System.Windows.Forms.Label()
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
-=======
-        Me.Label2 = New System.Windows.Forms.Label()
->>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
 =======
         Me.Label2 = New System.Windows.Forms.Label()
 >>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
@@ -440,10 +436,6 @@ Partial Class NewResident
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(156, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lblResId)
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
-=======
-        Me.Panel1.Controls.Add(Me.Label2)
->>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
 =======
         Me.Panel1.Controls.Add(Me.Label2)
 >>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
@@ -459,15 +451,12 @@ Partial Class NewResident
         Me.lblResId.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblResId.Font = New System.Drawing.Font("Calibri", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
         Me.lblResId.Location = New System.Drawing.Point(523, 40)
         Me.lblResId.Name = "lblResId"
         Me.lblResId.Size = New System.Drawing.Size(249, 34)
         Me.lblResId.TabIndex = 4
         '
 =======
-=======
->>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
         Me.lblResId.Location = New System.Drawing.Point(467, 40)
         Me.lblResId.Name = "lblResId"
         Me.lblResId.Size = New System.Drawing.Size(305, 34)
@@ -481,9 +470,6 @@ Partial Class NewResident
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 3
         '
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
->>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
-=======
 >>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
         'Label1
         '
@@ -560,10 +546,6 @@ Partial Class NewResident
     Friend WithEvents rdofemale As System.Windows.Forms.RadioButton
     Friend WithEvents rdomale As System.Windows.Forms.RadioButton
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewResident.Designer.vb
-=======
-    Friend WithEvents Label2 As System.Windows.Forms.Label
->>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb
 =======
     Friend WithEvents Label2 As System.Windows.Forms.Label
 >>>>>>> Stashed changes:Barangay Information System/frmNewResident.Designer.vb

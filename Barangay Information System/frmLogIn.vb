@@ -2,10 +2,7 @@
 
 Public Class frmLogIn
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     Public con As MySqlConnection = mysqldb()
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -35,9 +32,6 @@ Public Class frmLogIn
         connection.OpenDBConnection() 'Called the Method OpenDBConnection'
         Dim Reader As MySqlDataReader
         Dim Command As New MySqlCommand
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
         Try
             con.Open()

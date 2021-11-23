@@ -4,10 +4,7 @@ Module crud
     Public cmd As New MySqlCommand
     Public da As New MySqlDataAdapter
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     Public dr As MySqlDataReader
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     Public dt As New DataTable
@@ -18,7 +15,6 @@ Module crud
     Public edit As String
 
 #Region "crud"
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     Public Sub reloadtxt(ByVal query As String)
         Try
@@ -37,8 +33,6 @@ Module crud
         con.Close()
         da.Dispose()
     End Sub
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     Public Sub create(ByVal query As String, ByVal msgsuccess As String)
@@ -62,11 +56,7 @@ Module crud
     End Sub
 
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     Public Sub createNoMsg(ByVal query As String)
-=======
-    Public Sub createNoMsg(ByVal sql As String)
->>>>>>> Stashed changes
 =======
     Public Sub createNoMsg(ByVal sql As String)
 >>>>>>> Stashed changes
@@ -75,11 +65,7 @@ Module crud
             With cmd
                 .Connection = con
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
                 .CommandText = query
-=======
-                .CommandText = sql
->>>>>>> Stashed changes
 =======
                 .CommandText = sql
 >>>>>>> Stashed changes
@@ -132,11 +118,7 @@ Module crud
     End Sub
 
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     Public Sub deletes(ByVal query As String, ByVal msgsuccess As String)
-=======
-    Public Sub reloadtxt(ByVal query As String)
->>>>>>> Stashed changes
 =======
     Public Sub reloadtxt(ByVal query As String)
 >>>>>>> Stashed changes
@@ -147,10 +129,7 @@ Module crud
                 .CommandText = query
             End With
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 =======
-=======
->>>>>>> Stashed changes
             dt = New DataTable
             da = New MySqlDataAdapter(query, con)
             da.Fill(dt)
@@ -169,9 +148,6 @@ Module crud
                 .Connection = con
                 .CommandText = sql
             End With
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
             result = cmd.ExecuteNonQuery
             If result = 0 Then
