@@ -20,13 +20,10 @@ C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\bin\Debu
 C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.exe
 C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.xml
 C:\Users\asus\Downloads\brgyinfosystem-main\Barangay Information System\obj\Debug\Barangay Information System.pdb
-<<<<<<< Updated upstream
 C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\bin\Debug\Barangay Information System.exe.config
 C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\obj\Debug\Barangay Information System.exe
 C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\obj\Debug\Barangay Information System.xml
 C:\Users\asus\Documents\GitHub\backup-bis\Barangay Information System\obj\Debug\Barangay Information System.pdb
-=======
->>>>>>> Stashed changes
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe.config
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.exe.manifest
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\Debug\Barangay Information System.application
@@ -37,11 +34,7 @@ C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\De
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\bin\Debug\Guna.UI.dll
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.frmLogIn.resources
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Dashboard.resources
-<<<<<<< Updated upstream
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.NewBlotter.resources
-=======
-C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.frmNewBlotter.resources
->>>>>>> Stashed changes
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.NewResident.resources
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Resident.resources
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay_Information_System.Blotter.resources

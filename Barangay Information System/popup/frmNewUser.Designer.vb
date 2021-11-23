@@ -66,32 +66,12 @@ Partial Class NewUser
         Me.Panel2.Controls.Add(Me.gbUser)
         Me.Panel2.Controls.Add(Me.linkClose)
         Me.Panel2.Controls.Add(Me.btnCreate)
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
-=======
-        Me.Panel2.Controls.Add(Me.txtContactNum)
-        Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.txtAddress)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Controls.Add(Me.txtMiddleName)
-        Me.Panel2.Controls.Add(Me.txtLastName)
-        Me.Panel2.Controls.Add(Me.txtFirstName)
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Controls.Add(Me.dtpBirthdate)
-        Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.cmbSex)
-        Me.Panel2.Controls.Add(Me.cmbSuffix)
-        Me.Panel2.Controls.Add(Me.Label14)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.Panel2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel2.Location = New System.Drawing.Point(12, 12)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(485, 601)
         Me.Panel2.TabIndex = 80
         '
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         'gbUser
         '
         Me.gbUser.Controls.Add(Me.rdouser)
@@ -152,18 +132,6 @@ Partial Class NewUser
         Me.rdoadmin.TabStop = True
         Me.rdoadmin.Text = "Admin"
         Me.rdoadmin.UseVisualStyleBackColor = True
-=======
-        'cmbUserType
-        '
-        Me.cmbUserType.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbUserType.FormattingEnabled = True
-        Me.cmbUserType.Items.AddRange(New Object() {"1", "2"})
-        Me.cmbUserType.Location = New System.Drawing.Point(186, 483)
-        Me.cmbUserType.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.cmbUserType.Name = "cmbUserType"
-        Me.cmbUserType.Size = New System.Drawing.Size(221, 27)
-        Me.cmbUserType.TabIndex = 65
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         '
         'Label12
         '
@@ -205,11 +173,7 @@ Partial Class NewUser
         'txtUsername
         '
         Me.txtUsername.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtUsername.Location = New System.Drawing.Point(139, 299)
-=======
-        Me.txtUsername.Location = New System.Drawing.Point(187, 378)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(220, 27)
@@ -218,11 +182,7 @@ Partial Class NewUser
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtPassword.Location = New System.Drawing.Point(138, 334)
-=======
-        Me.txtPassword.Location = New System.Drawing.Point(186, 413)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -258,11 +218,7 @@ Partial Class NewUser
         'txtContactNum
         '
         Me.txtContactNum.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtContactNum.Location = New System.Drawing.Point(139, 229)
-=======
-        Me.txtContactNum.Location = New System.Drawing.Point(187, 308)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtContactNum.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtContactNum.Name = "txtContactNum"
         Me.txtContactNum.Size = New System.Drawing.Size(221, 27)
@@ -284,11 +240,7 @@ Partial Class NewUser
         'txtAddress
         '
         Me.txtAddress.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtAddress.Location = New System.Drawing.Point(139, 264)
-=======
-        Me.txtAddress.Location = New System.Drawing.Point(187, 343)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtAddress.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtAddress.Multiline = True
         Me.txtAddress.Name = "txtAddress"
@@ -324,11 +276,7 @@ Partial Class NewUser
         'txtMiddleName
         '
         Me.txtMiddleName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtMiddleName.Location = New System.Drawing.Point(139, 91)
-=======
-        Me.txtMiddleName.Location = New System.Drawing.Point(187, 170)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtMiddleName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtMiddleName.Name = "txtMiddleName"
         Me.txtMiddleName.Size = New System.Drawing.Size(221, 27)
@@ -337,11 +285,7 @@ Partial Class NewUser
         'txtLastName
         '
         Me.txtLastName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtLastName.Location = New System.Drawing.Point(139, 21)
-=======
-        Me.txtLastName.Location = New System.Drawing.Point(187, 100)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtLastName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(221, 27)
@@ -350,11 +294,7 @@ Partial Class NewUser
         'txtFirstName
         '
         Me.txtFirstName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtFirstName.Location = New System.Drawing.Point(139, 56)
-=======
-        Me.txtFirstName.Location = New System.Drawing.Point(187, 135)
->>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtFirstName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(221, 27)
