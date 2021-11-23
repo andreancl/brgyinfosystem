@@ -46,3 +46,4 @@ C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\De
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.exe
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.xml
 C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.pdb
+C:\Users\asus\Documents\GitHub\brgyinfosystem\Barangay Information System\obj\Debug\Barangay Information System.vbprojResolveAssemblyReference.cache
