@@ -17,6 +17,9 @@
     Private Sub btnBlotter_Click(sender As Object, e As EventArgs) Handles btnBlotter.Click
         Blotter.Show()
         Me.Close()
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     End Sub
 
@@ -26,6 +29,7 @@
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         sysExit.ExitSystem()
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     End Sub
 
@@ -39,5 +43,9 @@
 >>>>>>> Stashed changes
     End Sub
 
+=======
+    End Sub
+
+>>>>>>> Stashed changes
 
 End Class

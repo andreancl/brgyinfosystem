@@ -125,6 +125,7 @@
       <SubType>Form</SubType>
     </Compile>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Compile Include="popup\frmNewBlotter.Designer.vb">
       <DependentUpon>frmNewBlotter.vb</DependentUpon>
     </Compile>
@@ -133,6 +134,8 @@
     </Compile>
     <Compile Include="popup\frmNewResident.Designer.vb">
 =======
+=======
+>>>>>>> Stashed changes
     <Compile Include="frmNewBlotter.Designer.vb">
       <DependentUpon>frmNewBlotter.vb</DependentUpon>
     </Compile>
@@ -190,11 +193,14 @@
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </EmbeddedResource>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <EmbeddedResource Include="popup\frmNewBlotter.resx">
       <DependentUpon>frmNewBlotter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="popup\frmNewResident.resx">
 =======
+=======
+>>>>>>> Stashed changes
     <EmbeddedResource Include="frmNewBlotter.resx">
       <DependentUpon>frmNewBlotter.vb</DependentUpon>
     </EmbeddedResource>

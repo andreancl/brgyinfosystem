@@ -84,6 +84,9 @@ Partial Class NewUser
         Me.Panel2.Controls.Add(Me.cmbSex)
         Me.Panel2.Controls.Add(Me.cmbSuffix)
         Me.Panel2.Controls.Add(Me.Label14)
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
+=======
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.Panel2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel2.Location = New System.Drawing.Point(12, 12)
@@ -206,8 +209,11 @@ Partial Class NewUser
         '
         Me.txtUsername.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtUsername.Location = New System.Drawing.Point(139, 299)
 =======
+=======
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtUsername.Location = New System.Drawing.Point(187, 378)
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -219,8 +225,11 @@ Partial Class NewUser
         '
         Me.txtPassword.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtPassword.Location = New System.Drawing.Point(138, 334)
 =======
+=======
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtPassword.Location = New System.Drawing.Point(186, 413)
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -259,8 +268,11 @@ Partial Class NewUser
         '
         Me.txtContactNum.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtContactNum.Location = New System.Drawing.Point(139, 229)
 =======
+=======
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtContactNum.Location = New System.Drawing.Point(187, 308)
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtContactNum.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -285,8 +297,11 @@ Partial Class NewUser
         '
         Me.txtAddress.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtAddress.Location = New System.Drawing.Point(139, 264)
 =======
+=======
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtAddress.Location = New System.Drawing.Point(187, 343)
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtAddress.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -325,8 +340,11 @@ Partial Class NewUser
         '
         Me.txtMiddleName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtMiddleName.Location = New System.Drawing.Point(139, 91)
 =======
+=======
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtMiddleName.Location = New System.Drawing.Point(187, 170)
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtMiddleName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -338,8 +356,11 @@ Partial Class NewUser
         '
         Me.txtLastName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtLastName.Location = New System.Drawing.Point(139, 21)
 =======
+=======
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtLastName.Location = New System.Drawing.Point(187, 100)
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtLastName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -351,8 +372,11 @@ Partial Class NewUser
         '
         Me.txtFirstName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
+<<<<<<< Updated upstream:Barangay Information System/popup/frmNewUser.Designer.vb
         Me.txtFirstName.Location = New System.Drawing.Point(139, 56)
 =======
+=======
+>>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtFirstName.Location = New System.Drawing.Point(187, 135)
 >>>>>>> Stashed changes:Barangay Information System/frmNewUser.Designer.vb
         Me.txtFirstName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
