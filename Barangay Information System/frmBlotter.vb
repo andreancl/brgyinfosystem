@@ -1,12 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Blotter
-    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+    Private Sub btnDashboard_Click(sender As Object, e As EventArgs)
         Dashboard.Show()
         Me.Close()
     End Sub
 
-    Private Sub btnResident_Click(sender As Object, e As EventArgs) Handles btnResident.Click
+    Private Sub btnResident_Click(sender As Object, e As EventArgs)
         Resident.Show()
         Me.Close()
     End Sub
@@ -15,7 +15,7 @@ Public Class Blotter
         NewUser.Show()
     End Sub
 
-    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
+    Private Sub btnLogOut_Click(sender As Object, e As EventArgs)
         sysExit.ExitSystem()
     End Sub
 

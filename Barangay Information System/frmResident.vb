@@ -34,12 +34,12 @@ Public Class Resident
         reloadDgv(query, dgvResidentRecords)
     End Sub
 
-    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+    Private Sub btnDashboard_Click(sender As Object, e As EventArgs)
         Dashboard.Show()
         Me.Close()
     End Sub
 
-    Private Sub btnBlotter_Click(sender As Object, e As EventArgs) Handles btnBlotter.Click
+    Private Sub btnBlotter_Click(sender As Object, e As EventArgs)
         Blotter.Show()
         Me.Close()
     End Sub
@@ -48,11 +48,11 @@ Public Class Resident
         NewResident.Show()
     End Sub
 
-    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
+    Private Sub btnLogOut_Click(sender As Object, e As EventArgs)
         sysExit.ExitSystem()
     End Sub
 
-    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+    Private Sub btnUser_Click(sender As Object, e As EventArgs)
         NewUser.Show()
     End Sub
 End Class

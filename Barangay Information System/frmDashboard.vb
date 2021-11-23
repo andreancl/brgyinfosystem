@@ -17,4 +17,12 @@
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         sysExit.ExitSystem()
     End Sub
+
+    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        For Each ctl As Control In Me.Controls
+            If TypeOf ctl Is MdiClient Then
+                ctl.BackColor = Me.BackColor
+            End If
+        Next ctl
+    End Sub
 End Class
