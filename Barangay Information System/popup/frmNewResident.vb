@@ -13,7 +13,7 @@
 
             query = "INSERT INTO residents (`ResidentId`, `LastName`, `FirstName`, `MiddleName`" _
                 & ", `Suffix`, `Sex`, `Birthdate`, `Birthplace`, `CivilStatus`, `Religion`" _
-                & ", `Nationality`, `ContactNo`, `Address`) VALUES ('" & resident_id & "','" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "', '" & cmbSuffix.Text & "', '" & rdo & "', '" & dtpBirthdate.Text & "', '" & txtBirthplace.Text & "','" & cmbCivilStatus.Text & "', '" & txtReligion.Text & "', '" & txtNationality.Text & "', '" & txtContactNum.Text & "', '" & txtAddress.Text & "')"
+                & ", `Nationality`, `ContactNo`, `Address`) VALUES ('" & resident_id & "','" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "', '" & cmbSuffix.Text & "', '" & rdo & "', '" & dtpBirthdate.Text & "', '" & txtBirthplace.Text & "','" & cmbCivilStatus.Text & "', '" & txtReligion.Text & "', '" & txtNationality.Text & "', '" & txtContactNo.Text & "', '" & txtAddress.Text & "')"
                 create(query, txtFirstName.Text & " " & txtLastName.Text)
            
             Resident.load_ResidentInfo()
@@ -31,5 +31,17 @@
 
     Private Sub NewResident_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         setup(gbResident)
+    End Sub
+
+    Private Sub gbResident_Enter(sender As Object, e As EventArgs) Handles gbResident.Enter
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCivilStatus.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbSuffix_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbSuffix.SelectedIndexChanged
+
     End Sub
 End Class

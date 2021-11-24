@@ -171,6 +171,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="includes\users.vb" />
+    <Compile Include="viewResident.Designer.vb">
+      <DependentUpon>viewResident.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewResident.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmLogIn.resx">
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="popup\frmNewUser.resx">
       <DependentUpon>frmNewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewResident.resx">
+      <DependentUpon>viewResident.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

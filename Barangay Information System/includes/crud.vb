@@ -48,7 +48,25 @@ Module crud
         End Try
         con.Close()
     End Sub
+    Public Sub fileblotter(ByVal query As String, ByVal msgsuccess As String)
+        Try
+            con.Open()
+            With cmd
+                .Connection = con
+                .CommandText = query
+                result = cmd.ExecuteNonQuery
+                If result = 0 Then
+                    MsgBox("This action cannot be performed.", MsgBoxStyle.Information)
+                Else
+                    MsgBox(msgsuccess & " blotter has been filed.")
+                End If
+            End With
 
+        Catch ex As Exception
+            MsgBox(ex.Message & " create")
+        End Try
+        con.Close()
+    End Sub
     Public Sub createNoMsg(ByVal query As String)
         Try
             con.Open()

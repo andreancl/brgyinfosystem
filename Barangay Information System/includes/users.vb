@@ -33,8 +33,6 @@ Module user
                     Dashboard.Show()
                     frmLogIn.Hide()
                 End If
-            Else
-                MessageBox.Show("Login Failed. Try again.")
             End If
             dr.Close()
             cmd.Dispose()

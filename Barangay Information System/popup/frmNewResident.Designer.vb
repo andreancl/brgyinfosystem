@@ -25,32 +25,32 @@ Partial Class NewResident
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewResident))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.gbResident = New System.Windows.Forms.GroupBox()
-        Me.rdofemale = New System.Windows.Forms.RadioButton()
-        Me.linkClose = New Guna.UI.WinForms.GunaLinkLabel()
-        Me.rdomale = New System.Windows.Forms.RadioButton()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.cmbCivilStatus = New System.Windows.Forms.ComboBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtContactNo = New System.Windows.Forms.TextBox()
         Me.txtNationality = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.txtReligion = New System.Windows.Forms.TextBox()
+        Me.cmbCivilStatus = New System.Windows.Forms.ComboBox()
+        Me.txtBirthplace = New System.Windows.Forms.TextBox()
+        Me.dtpBirthdate = New System.Windows.Forms.DateTimePicker()
+        Me.rdoFemale = New System.Windows.Forms.RadioButton()
+        Me.rdoMale = New System.Windows.Forms.RadioButton()
+        Me.cmbSuffix = New System.Windows.Forms.ComboBox()
+        Me.txtMiddleName = New System.Windows.Forms.TextBox()
+        Me.txtFirstName = New System.Windows.Forms.TextBox()
+        Me.linkClose = New Guna.UI.WinForms.GunaLinkLabel()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.txtBirthplace = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtContactNum = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtMiddleName = New System.Windows.Forms.TextBox()
         Me.txtLastName = New System.Windows.Forms.TextBox()
-        Me.txtFirstName = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.dtpBirthdate = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.cmbSuffix = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblResId = New System.Windows.Forms.Label()
@@ -72,32 +72,32 @@ Partial Class NewResident
         '
         'gbResident
         '
-        Me.gbResident.Controls.Add(Me.rdofemale)
-        Me.gbResident.Controls.Add(Me.linkClose)
-        Me.gbResident.Controls.Add(Me.rdomale)
-        Me.gbResident.Controls.Add(Me.btnSave)
-        Me.gbResident.Controls.Add(Me.cmbCivilStatus)
+        Me.gbResident.Controls.Add(Me.txtAddress)
+        Me.gbResident.Controls.Add(Me.txtContactNo)
         Me.gbResident.Controls.Add(Me.txtNationality)
-        Me.gbResident.Controls.Add(Me.Label16)
         Me.gbResident.Controls.Add(Me.txtReligion)
+        Me.gbResident.Controls.Add(Me.cmbCivilStatus)
+        Me.gbResident.Controls.Add(Me.txtBirthplace)
+        Me.gbResident.Controls.Add(Me.dtpBirthdate)
+        Me.gbResident.Controls.Add(Me.rdoFemale)
+        Me.gbResident.Controls.Add(Me.rdoMale)
+        Me.gbResident.Controls.Add(Me.cmbSuffix)
+        Me.gbResident.Controls.Add(Me.txtMiddleName)
+        Me.gbResident.Controls.Add(Me.txtFirstName)
+        Me.gbResident.Controls.Add(Me.linkClose)
+        Me.gbResident.Controls.Add(Me.btnSave)
+        Me.gbResident.Controls.Add(Me.Label16)
         Me.gbResident.Controls.Add(Me.Label15)
         Me.gbResident.Controls.Add(Me.Label13)
-        Me.gbResident.Controls.Add(Me.txtBirthplace)
         Me.gbResident.Controls.Add(Me.Label12)
-        Me.gbResident.Controls.Add(Me.txtContactNum)
         Me.gbResident.Controls.Add(Me.Label10)
-        Me.gbResident.Controls.Add(Me.txtAddress)
         Me.gbResident.Controls.Add(Me.Label4)
         Me.gbResident.Controls.Add(Me.Label11)
-        Me.gbResident.Controls.Add(Me.txtMiddleName)
         Me.gbResident.Controls.Add(Me.txtLastName)
-        Me.gbResident.Controls.Add(Me.txtFirstName)
         Me.gbResident.Controls.Add(Me.Label5)
         Me.gbResident.Controls.Add(Me.Label6)
         Me.gbResident.Controls.Add(Me.Label7)
-        Me.gbResident.Controls.Add(Me.dtpBirthdate)
         Me.gbResident.Controls.Add(Me.Label9)
-        Me.gbResident.Controls.Add(Me.cmbSuffix)
         Me.gbResident.Controls.Add(Me.Label14)
         Me.gbResident.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.gbResident.Location = New System.Drawing.Point(11, 85)
@@ -106,19 +106,131 @@ Partial Class NewResident
         Me.gbResident.TabIndex = 95
         Me.gbResident.TabStop = False
         '
-        'rdofemale
+        'txtAddress
         '
-        Me.rdofemale.AutoSize = True
-        Me.rdofemale.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdofemale.ForeColor = System.Drawing.Color.White
-        Me.rdofemale.Location = New System.Drawing.Point(216, 158)
-        Me.rdofemale.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.rdofemale.Name = "rdofemale"
-        Me.rdofemale.Size = New System.Drawing.Size(74, 23)
-        Me.rdofemale.TabIndex = 95
-        Me.rdofemale.TabStop = True
-        Me.rdofemale.Text = "Female"
-        Me.rdofemale.UseVisualStyleBackColor = True
+        Me.txtAddress.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(511, 191)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(221, 27)
+        Me.txtAddress.TabIndex = 104
+        '
+        'txtContactNo
+        '
+        Me.txtContactNo.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactNo.Location = New System.Drawing.Point(511, 157)
+        Me.txtContactNo.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtContactNo.Name = "txtContactNo"
+        Me.txtContactNo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtContactNo.Size = New System.Drawing.Size(221, 27)
+        Me.txtContactNo.TabIndex = 103
+        '
+        'txtNationality
+        '
+        Me.txtNationality.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNationality.Location = New System.Drawing.Point(511, 122)
+        Me.txtNationality.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtNationality.Name = "txtNationality"
+        Me.txtNationality.Size = New System.Drawing.Size(221, 27)
+        Me.txtNationality.TabIndex = 102
+        '
+        'txtReligion
+        '
+        Me.txtReligion.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtReligion.Location = New System.Drawing.Point(511, 88)
+        Me.txtReligion.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtReligion.Name = "txtReligion"
+        Me.txtReligion.Size = New System.Drawing.Size(221, 27)
+        Me.txtReligion.TabIndex = 101
+        '
+        'cmbCivilStatus
+        '
+        Me.cmbCivilStatus.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCivilStatus.FormattingEnabled = True
+        Me.cmbCivilStatus.Items.AddRange(New Object() {"Single", "Married", "Widow", "Separated"})
+        Me.cmbCivilStatus.Location = New System.Drawing.Point(511, 52)
+        Me.cmbCivilStatus.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.cmbCivilStatus.Name = "cmbCivilStatus"
+        Me.cmbCivilStatus.Size = New System.Drawing.Size(221, 27)
+        Me.cmbCivilStatus.TabIndex = 100
+        '
+        'txtBirthplace
+        '
+        Me.txtBirthplace.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBirthplace.Location = New System.Drawing.Point(511, 17)
+        Me.txtBirthplace.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtBirthplace.Name = "txtBirthplace"
+        Me.txtBirthplace.Size = New System.Drawing.Size(221, 27)
+        Me.txtBirthplace.TabIndex = 99
+        '
+        'dtpBirthdate
+        '
+        Me.dtpBirthdate.CustomFormat = "yyyy-MM-dd"
+        Me.dtpBirthdate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpBirthdate.Location = New System.Drawing.Point(143, 190)
+        Me.dtpBirthdate.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.dtpBirthdate.Name = "dtpBirthdate"
+        Me.dtpBirthdate.Size = New System.Drawing.Size(221, 27)
+        Me.dtpBirthdate.TabIndex = 98
+        Me.dtpBirthdate.Value = New Date(2021, 10, 16, 0, 0, 0, 0)
+        '
+        'rdoFemale
+        '
+        Me.rdoFemale.AutoSize = True
+        Me.rdoFemale.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoFemale.ForeColor = System.Drawing.Color.White
+        Me.rdoFemale.Location = New System.Drawing.Point(213, 159)
+        Me.rdoFemale.Name = "rdoFemale"
+        Me.rdoFemale.Size = New System.Drawing.Size(74, 23)
+        Me.rdoFemale.TabIndex = 97
+        Me.rdoFemale.TabStop = True
+        Me.rdoFemale.Text = "Female"
+        Me.rdoFemale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rdoFemale.UseVisualStyleBackColor = True
+        '
+        'rdoMale
+        '
+        Me.rdoMale.AutoSize = True
+        Me.rdoMale.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoMale.ForeColor = System.Drawing.Color.White
+        Me.rdoMale.Location = New System.Drawing.Point(147, 159)
+        Me.rdoMale.Name = "rdoMale"
+        Me.rdoMale.Size = New System.Drawing.Size(60, 23)
+        Me.rdoMale.TabIndex = 96
+        Me.rdoMale.TabStop = True
+        Me.rdoMale.Text = "Male"
+        Me.rdoMale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rdoMale.UseVisualStyleBackColor = True
+        '
+        'cmbSuffix
+        '
+        Me.cmbSuffix.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSuffix.FormattingEnabled = True
+        Me.cmbSuffix.Items.AddRange(New Object() {"N/A", "Jr.", "Sr.", "I", "II", "III", "IV", "V", "Others"})
+        Me.cmbSuffix.Location = New System.Drawing.Point(143, 122)
+        Me.cmbSuffix.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.cmbSuffix.Name = "cmbSuffix"
+        Me.cmbSuffix.Size = New System.Drawing.Size(221, 27)
+        Me.cmbSuffix.TabIndex = 95
+        '
+        'txtMiddleName
+        '
+        Me.txtMiddleName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMiddleName.Location = New System.Drawing.Point(143, 88)
+        Me.txtMiddleName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtMiddleName.Name = "txtMiddleName"
+        Me.txtMiddleName.Size = New System.Drawing.Size(221, 27)
+        Me.txtMiddleName.TabIndex = 94
+        '
+        'txtFirstName
+        '
+        Me.txtFirstName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstName.Location = New System.Drawing.Point(143, 53)
+        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtFirstName.Name = "txtFirstName"
+        Me.txtFirstName.Size = New System.Drawing.Size(221, 27)
+        Me.txtFirstName.TabIndex = 93
         '
         'linkClose
         '
@@ -132,20 +244,6 @@ Partial Class NewResident
         Me.linkClose.TabIndex = 63
         Me.linkClose.TabStop = True
         Me.linkClose.Text = "Close"
-        '
-        'rdomale
-        '
-        Me.rdomale.AutoSize = True
-        Me.rdomale.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdomale.ForeColor = System.Drawing.Color.White
-        Me.rdomale.Location = New System.Drawing.Point(151, 158)
-        Me.rdomale.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.rdomale.Name = "rdomale"
-        Me.rdomale.Size = New System.Drawing.Size(60, 23)
-        Me.rdomale.TabIndex = 96
-        Me.rdomale.TabStop = True
-        Me.rdomale.Text = "Male"
-        Me.rdomale.UseVisualStyleBackColor = True
         '
         'btnSave
         '
@@ -163,27 +261,6 @@ Partial Class NewResident
         Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'cmbCivilStatus
-        '
-        Me.cmbCivilStatus.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbCivilStatus.FormattingEnabled = True
-        Me.cmbCivilStatus.Items.AddRange(New Object() {"Single", "Married", "Widow", "Separated"})
-        Me.cmbCivilStatus.Location = New System.Drawing.Point(511, 52)
-        Me.cmbCivilStatus.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.cmbCivilStatus.Name = "cmbCivilStatus"
-        Me.cmbCivilStatus.Size = New System.Drawing.Size(222, 27)
-        Me.cmbCivilStatus.TabIndex = 94
-        Me.cmbCivilStatus.Text = "Single"
-        '
-        'txtNationality
-        '
-        Me.txtNationality.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNationality.Location = New System.Drawing.Point(511, 122)
-        Me.txtNationality.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtNationality.Name = "txtNationality"
-        Me.txtNationality.Size = New System.Drawing.Size(221, 27)
-        Me.txtNationality.TabIndex = 93
-        '
         'Label16
         '
         Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
@@ -196,15 +273,6 @@ Partial Class NewResident
         Me.Label16.TabIndex = 92
         Me.Label16.Text = "Nationality"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtReligion
-        '
-        Me.txtReligion.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtReligion.Location = New System.Drawing.Point(511, 88)
-        Me.txtReligion.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtReligion.Name = "txtReligion"
-        Me.txtReligion.Size = New System.Drawing.Size(221, 27)
-        Me.txtReligion.TabIndex = 91
         '
         'Label15
         '
@@ -232,15 +300,6 @@ Partial Class NewResident
         Me.Label13.Text = "Civil Status"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'txtBirthplace
-        '
-        Me.txtBirthplace.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBirthplace.Location = New System.Drawing.Point(511, 17)
-        Me.txtBirthplace.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtBirthplace.Name = "txtBirthplace"
-        Me.txtBirthplace.Size = New System.Drawing.Size(221, 27)
-        Me.txtBirthplace.TabIndex = 87
-        '
         'Label12
         '
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
@@ -253,15 +312,6 @@ Partial Class NewResident
         Me.Label12.TabIndex = 86
         Me.Label12.Text = "Birthplace"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtContactNum
-        '
-        Me.txtContactNum.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContactNum.Location = New System.Drawing.Point(512, 157)
-        Me.txtContactNum.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtContactNum.Name = "txtContactNum"
-        Me.txtContactNum.Size = New System.Drawing.Size(221, 27)
-        Me.txtContactNum.TabIndex = 76
         '
         'Label10
         '
@@ -276,16 +326,6 @@ Partial Class NewResident
         Me.Label10.Text = "Contact No."
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'txtAddress
-        '
-        Me.txtAddress.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(511, 192)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtAddress.Multiline = True
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(221, 28)
-        Me.txtAddress.TabIndex = 78
-        '
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
@@ -294,7 +334,7 @@ Partial Class NewResident
         Me.Label4.Location = New System.Drawing.Point(17, 18)
         Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(121, 26)
+        Me.Label4.Size = New System.Drawing.Size(121, 25)
         Me.Label4.TabIndex = 64
         Me.Label4.Text = "Last Name"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -307,19 +347,10 @@ Partial Class NewResident
         Me.Label11.Location = New System.Drawing.Point(386, 192)
         Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(122, 28)
+        Me.Label11.Size = New System.Drawing.Size(121, 25)
         Me.Label11.TabIndex = 77
         Me.Label11.Text = "Address"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtMiddleName
-        '
-        Me.txtMiddleName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMiddleName.Location = New System.Drawing.Point(143, 88)
-        Me.txtMiddleName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtMiddleName.Name = "txtMiddleName"
-        Me.txtMiddleName.Size = New System.Drawing.Size(221, 27)
-        Me.txtMiddleName.TabIndex = 69
         '
         'txtLastName
         '
@@ -330,15 +361,6 @@ Partial Class NewResident
         Me.txtLastName.Size = New System.Drawing.Size(221, 27)
         Me.txtLastName.TabIndex = 67
         '
-        'txtFirstName
-        '
-        Me.txtFirstName.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFirstName.Location = New System.Drawing.Point(143, 53)
-        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(221, 27)
-        Me.txtFirstName.TabIndex = 68
-        '
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
@@ -347,7 +369,7 @@ Partial Class NewResident
         Me.Label5.Location = New System.Drawing.Point(17, 54)
         Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(121, 26)
+        Me.Label5.Size = New System.Drawing.Size(121, 25)
         Me.Label5.TabIndex = 65
         Me.Label5.Text = "First Name"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -360,7 +382,7 @@ Partial Class NewResident
         Me.Label6.Location = New System.Drawing.Point(17, 89)
         Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(121, 26)
+        Me.Label6.Size = New System.Drawing.Size(121, 25)
         Me.Label6.TabIndex = 66
         Me.Label6.Text = "Middle Name"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -378,18 +400,6 @@ Partial Class NewResident
         Me.Label7.Text = "Birthdate"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'dtpBirthdate
-        '
-        Me.dtpBirthdate.CustomFormat = "yyyy-MM-dd"
-        Me.dtpBirthdate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpBirthdate.Location = New System.Drawing.Point(143, 191)
-        Me.dtpBirthdate.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.dtpBirthdate.Name = "dtpBirthdate"
-        Me.dtpBirthdate.Size = New System.Drawing.Size(221, 27)
-        Me.dtpBirthdate.TabIndex = 79
-        Me.dtpBirthdate.Value = New Date(2021, 10, 16, 0, 0, 0, 0)
-        '
         'Label9
         '
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
@@ -402,17 +412,6 @@ Partial Class NewResident
         Me.Label9.TabIndex = 73
         Me.Label9.Text = "Sex"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'cmbSuffix
-        '
-        Me.cmbSuffix.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbSuffix.FormattingEnabled = True
-        Me.cmbSuffix.Items.AddRange(New Object() {"", "Jr.", "Sr.", "I", "II", "III", "IV", "V", "Others"})
-        Me.cmbSuffix.Location = New System.Drawing.Point(143, 123)
-        Me.cmbSuffix.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.cmbSuffix.Name = "cmbSuffix"
-        Me.cmbSuffix.Size = New System.Drawing.Size(221, 27)
-        Me.cmbSuffix.TabIndex = 70
         '
         'Label14
         '
@@ -495,31 +494,31 @@ Partial Class NewResident
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblResTitle As System.Windows.Forms.Label
     Friend WithEvents linkClose As Guna.UI.WinForms.GunaLinkLabel
-    Friend WithEvents txtContactNum As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents txtAddress As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents txtMiddleName As System.Windows.Forms.TextBox
     Friend WithEvents txtLastName As System.Windows.Forms.TextBox
-    Friend WithEvents txtFirstName As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents dtpBirthdate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents cmbSuffix As System.Windows.Forms.ComboBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents txtNationality As System.Windows.Forms.TextBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents txtReligion As System.Windows.Forms.TextBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents txtBirthplace As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents gbResident As System.Windows.Forms.GroupBox
-    Friend WithEvents cmbCivilStatus As System.Windows.Forms.ComboBox
-    Friend WithEvents rdofemale As System.Windows.Forms.RadioButton
-    Friend WithEvents rdomale As System.Windows.Forms.RadioButton
     Friend WithEvents lblResId As System.Windows.Forms.Label
+    Friend WithEvents txtMiddleName As System.Windows.Forms.TextBox
+    Friend WithEvents txtFirstName As System.Windows.Forms.TextBox
+    Friend WithEvents cmbSuffix As System.Windows.Forms.ComboBox
+    Friend WithEvents rdoFemale As System.Windows.Forms.RadioButton
+    Friend WithEvents rdoMale As System.Windows.Forms.RadioButton
+    Friend WithEvents cmbCivilStatus As System.Windows.Forms.ComboBox
+    Friend WithEvents txtBirthplace As System.Windows.Forms.TextBox
+    Friend WithEvents dtpBirthdate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents txtAddress As System.Windows.Forms.TextBox
+    Friend WithEvents txtContactNo As System.Windows.Forms.TextBox
+    Friend WithEvents txtNationality As System.Windows.Forms.TextBox
+    Friend WithEvents txtReligion As System.Windows.Forms.TextBox
 End Class

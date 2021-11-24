@@ -41,6 +41,9 @@ Partial Class NewBlotter
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.gbBlotter = New System.Windows.Forms.GroupBox()
+        Me.btnFind = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtResidentId = New System.Windows.Forms.TextBox()
         Me.dtpIncidentTime = New System.Windows.Forms.DateTimePicker()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -163,6 +166,9 @@ Partial Class NewBlotter
         '
         'gbBlotter
         '
+        Me.gbBlotter.Controls.Add(Me.btnFind)
+        Me.gbBlotter.Controls.Add(Me.Label1)
+        Me.gbBlotter.Controls.Add(Me.txtResidentId)
         Me.gbBlotter.Controls.Add(Me.dtpIncidentTime)
         Me.gbBlotter.Controls.Add(Me.txtStatement)
         Me.gbBlotter.Controls.Add(Me.Label10)
@@ -179,11 +185,32 @@ Partial Class NewBlotter
         Me.gbBlotter.Name = "gbBlotter"
         Me.gbBlotter.TabStop = False
         '
+        'btnFind
+        '
+        Me.btnFind.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        resources.ApplyResources(Me.btnFind, "btnFind")
+        Me.btnFind.ForeColor = System.Drawing.Color.White
+        Me.btnFind.Name = "btnFind"
+        Me.btnFind.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Name = "Label1"
+        '
+        'txtResidentId
+        '
+        resources.ApplyResources(Me.txtResidentId, "txtResidentId")
+        Me.txtResidentId.Name = "txtResidentId"
+        '
         'dtpIncidentTime
         '
-        Me.dtpIncidentTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
         resources.ApplyResources(Me.dtpIncidentTime, "dtpIncidentTime")
+        Me.dtpIncidentTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.dtpIncidentTime.Name = "dtpIncidentTime"
+        Me.dtpIncidentTime.Value = New Date(2021, 11, 24, 16, 17, 48, 0)
         '
         'NewBlotter
         '
@@ -222,4 +249,7 @@ Partial Class NewBlotter
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents dtpIncidentTime As System.Windows.Forms.DateTimePicker
     Friend WithEvents gbBlotter As System.Windows.Forms.GroupBox
+    Friend WithEvents btnFind As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtResidentId As System.Windows.Forms.TextBox
 End Class
