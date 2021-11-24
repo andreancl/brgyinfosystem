@@ -40,10 +40,11 @@ CREATE TABLE `residents` (
   `DateTimeCreated` datetime DEFAULT CURRENT_TIMESTAMP,
   `DateTimeUpdated` datetime DEFAULT CURRENT_TIMESTAMP,
   `Remarks` varchar(45) DEFAULT NULL,
+  `Age` int(11) DEFAULT NULL,
   PRIMARY KEY (`ResidentId`),
   UNIQUE KEY `ID_UNIQUE` (`Id`),
   UNIQUE KEY `RESIDENT_ID_UNIQUE` (`ResidentId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -52,7 +53,6 @@ CREATE TABLE `residents` (
 
 LOCK TABLES `residents` WRITE;
 /*!40000 ALTER TABLE `residents` DISABLE KEYS */;
-INSERT INTO `residents` VALUES (1,'RES291020210509','Rafael','Andrea Mae Nicole','Bautista','N/A','Female','2000-01-06','Caloocan','Single','Catholic','Filipino',9950573917,'Caloocan City','2021-10-29 17:06:09','2021-10-29 17:06:09',NULL);
 /*!40000 ALTER TABLE `residents` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +87,7 @@ CREATE TABLE `service_details` (
 
 LOCK TABLES `service_details` WRITE;
 /*!40000 ALTER TABLE `service_details` DISABLE KEYS */;
-INSERT INTO `service_details` VALUES (1,2,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(2,3,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(3,4,'juna dla cruz','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,NULL);
+INSERT INTO `service_details` VALUES (1,2,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(2,3,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(3,1,'juna dla cruz','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,NULL);
 /*!40000 ALTER TABLE `service_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,16 +188,16 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `UserId` varchar(45) NOT NULL,
-  `Username` varchar(45) NOT NULL,
-  `Password` varchar(100) NOT NULL,
+  `LastName` varchar(45) NOT NULL,
   `FirstName` varchar(45) NOT NULL,
   `MiddleName` varchar(45) DEFAULT NULL,
-  `LastName` varchar(45) NOT NULL,
   `Suffix` varchar(45) DEFAULT NULL,
   `Sex` varchar(45) NOT NULL,
   `Birthdate` date NOT NULL,
   `Address` varchar(45) NOT NULL,
   `ContactNumber` bigint(20) NOT NULL,
+  `Username` varchar(45) NOT NULL,
+  `Password` varchar(100) NOT NULL,
   `Position` varchar(45) NOT NULL,
   `DateTimeCreated` datetime DEFAULT CURRENT_TIMESTAMP,
   `DateTimeUpdated` datetime DEFAULT CURRENT_TIMESTAMP,
@@ -214,7 +214,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (101,'12345','admin','0000','Chairman',NULL,'',NULL,'Female','2000-01-06','Caloocan City',9950573917,'Chairman',NULL,NULL,NULL,1),(102,'67890','secretary','12345','Secretary',NULL,'Secretary',NULL,'Female','2000-01-06','Caloocan City',9950573917,'Secretary','2021-10-21 21:39:01','2021-10-21 21:39:01',NULL,2);
+INSERT INTO `users` VALUES (101,'12345','','Chairman',NULL,NULL,'Female','2000-01-06','Caloocan City',9950573917,'admin','0000','Chairman',NULL,NULL,NULL,1),(102,'67890','Secretary','Secretary',NULL,NULL,'Female','2000-01-06','Caloocan City',9950573917,'secretary','12345','Secretary','2021-10-21 21:39:01','2021-10-21 21:39:01',NULL,2);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -227,4 +227,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-30  3:15:11
+-- Dump completed on 2021-11-24 14:57:44
