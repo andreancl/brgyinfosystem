@@ -207,7 +207,7 @@ Partial Class NewResident
         '
         Me.cmbSuffix.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbSuffix.FormattingEnabled = True
-        Me.cmbSuffix.Items.AddRange(New Object() {"N/A", "Jr.", "Sr.", "I", "II", "III", "IV", "V", "Others"})
+        Me.cmbSuffix.Items.AddRange(New Object() {"", "Jr.", "Sr.", "I", "II", "III", "IV", "V", "Others"})
         Me.cmbSuffix.Location = New System.Drawing.Point(143, 122)
         Me.cmbSuffix.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cmbSuffix.Name = "cmbSuffix"
@@ -508,7 +508,6 @@ Partial Class NewResident
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents gbResident As System.Windows.Forms.GroupBox
-    Friend WithEvents lblResId As System.Windows.Forms.Label
     Friend WithEvents txtMiddleName As System.Windows.Forms.TextBox
     Friend WithEvents txtFirstName As System.Windows.Forms.TextBox
     Friend WithEvents cmbSuffix As System.Windows.Forms.ComboBox
@@ -521,4 +520,5 @@ Partial Class NewResident
     Friend WithEvents txtContactNo As System.Windows.Forms.TextBox
     Friend WithEvents txtNationality As System.Windows.Forms.TextBox
     Friend WithEvents txtReligion As System.Windows.Forms.TextBox
+    Friend WithEvents lblResId As System.Windows.Forms.Label
 End Class

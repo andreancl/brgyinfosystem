@@ -3,6 +3,7 @@
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
         Const militaryTimeFormat As String = "HH:mm:ss"
         Dim dtpIncidentTime As String = DateTime.Now.ToString(militaryTimeFormat)
+
         Try
             query = "INSERT INTO service_details (`ServiceId`, `ComplaineeName`, `DefendantName`, `Incident`" _
                 & ", `IncidentDate`, `IncidentTime`, `Statement`, `ResidentId`) VALUES ('" & ServiceId & "'" _

@@ -654,6 +654,9 @@
   <data name="btnFind.Text" xml:space="preserve">
     <value>FIND</value>
   </data>
+  <data name="btnFind.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
   <data name="btnFind.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
