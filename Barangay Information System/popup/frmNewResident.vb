@@ -2,41 +2,45 @@
     Public resident_id As String
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
-            Dim datetime_now As String = String.Format("{0:ddMMyyyhhss}", DateTime.Now)
-            Dim resident_id = "RES" + datetime_now
             Dim rdo As String = ""
-
-            If rdoMale.Checked = True Then
-                rdo = "Male"
-            Else
-                rdo = "Female"
-            End If
+            query = "SELECT * FROM `residents` WHERE `ResidentId`='" & lblResId.Text & "'"
+            reloadtxt(query)
 
             If dt.Rows.Count > 0 Then
-
-                query = "INSERT INTO `residents` (`ResidentId`, `LastName`, `FirstName`, `MiddleName`" _
-                & ", `Suffix`, `Sex`, `Birthdate`, `Birthplace`, `CivilStatus`, `Religion`" _
-                & ", `Nationality`, `ContactNo`, `Address`) VALUES ('" & resident_id & "'" _
-                & ", '" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "'" _
-                & ", '" & cmbSuffix.Text & "', '" & rdo & "', '" & dtpBirthdate.Text & "'" _
-                & ", '" & txtBirthplace.Text & "','" & cmbCivilStatus.Text & "', '" & txtReligion.Text & "'" _
-                & ", '" & txtNationality.Text & "', '" & txtContactNo.Text & "', '" & txtAddress.Text & "')"
-                create(query, txtFirstName.Text & " " & txtLastName.Text)
-
-            Else
+                If rdoMale.Checked = True Then
+                    rdo = "Male"
+                Else
+                    rdo = "Female"
+                End If
 
                 query = "UPDATE `residents` SET  `LastName`='" & txtLastName.Text _
-                & "', `FirstName`='" & txtFirstName.Text & "', `MiddleName`='" & txtMiddleName.Text _
-                & "', `Suffix`='" & cmbSuffix.Text & "', `Sex`='" & rdo _
-                & "', `Birthdate`='" & Format(dtpBirthdate.Value, "yyyy-MM-dd") _
-                & "', `Birthplace`='" & txtBirthplace.Text & "', `CivilStatus`='" & cmbCivilStatus.Text _
-                & "', `Religion`='" & txtReligion.Text & "', `Nationality`='" & txtNationality.Text _
-                & "', `ContactNo`='" & txtContactNo.Text & "', `Address`='" & txtAddress.Text _
-                & "' WHERE `ResidentId`='" & lblResId.Text & "'"
+                   & "', `FirstName`='" & txtFirstName.Text & "', `MiddleName`='" & txtMiddleName.Text _
+                   & "', `Suffix`='" & cmbSuffix.Text & "', `Sex`='" & rdo _
+                   & "', `Birthdate`='" & Format(dtpBirthdate.Value, "yyyy-MM-dd") _
+                   & "', `Birthplace`='" & txtBirthplace.Text & "', `CivilStatus`='" & cmbCivilStatus.Text _
+                   & "', `Religion`='" & txtReligion.Text & "', `Nationality`='" & txtNationality.Text _
+                   & "', `ContactNo`='" & txtContactNo.Text & "', `Address`='" & txtAddress.Text _
+                   & "' WHERE `ResidentId`='" & lblResId.Text & "'"
                 updates(query, txtFirstName.Text & " " & txtLastName.Text)
+            Else
+                Dim datetime_now As String = String.Format("{0:ddMMyyyhhss}", DateTime.Now)
+                Dim resident_id = "RES" + datetime_now
 
+                If rdoMale.Checked = True Then
+                    rdo = "Male"
+                Else
+                    rdo = "Female"
+                End If
+
+                query = "INSERT INTO `residents` (`ResidentId`, `LastName`, `FirstName`, `MiddleName`" _
+                    & ", `Suffix`, `Sex`, `Birthdate`, `Birthplace`, `CivilStatus`, `Religion`" _
+                    & ", `Nationality`, `ContactNo`, `Address`) VALUES ('" & resident_id & "'" _
+                    & ", '" & txtLastName.Text & "', '" & txtFirstName.Text & "', '" & txtMiddleName.Text & "'" _
+                    & ", '" & cmbSuffix.Text & "', '" & rdo & "', '" & dtpBirthdate.Text & "'" _
+                    & ", '" & txtBirthplace.Text & "','" & cmbCivilStatus.Text & "', '" & txtReligion.Text & "'" _
+                    & ", '" & txtNationality.Text & "', '" & txtContactNo.Text & "', '" & txtAddress.Text & "')"
+                create(query, txtFirstName.Text & " " & txtLastName.Text)
             End If
-
             Resident.load_ResidentInfo()
             cleartext(gbResident)
             setup(gbResident)

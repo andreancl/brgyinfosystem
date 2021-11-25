@@ -6,7 +6,7 @@
 
         Try
             query = "INSERT INTO service_details (`ServiceId`, `ComplaineeName`, `DefendantName`, `Incident`" _
-                & ", `IncidentDate`, `IncidentTime`, `Statement`, `ResidentId`) VALUES ('" & ServiceId & "'" _
+                & ", `IncidentDate`, `IncidentTime`, `Statement`, `ResidentID`) VALUES ('" & ServiceId & "'" _
                 & ", '" & txtComName.Text & "', '" & txtDefName.Text & "', '" & txtIncident.Text & "'" _
                 & ", '" & dtpIncidentDate.Text & "', '" & dtpIncidentTime & "'" _
                 & ", '" & txtStatement.Text & "', '" & txtResidentId.Text & "' )"
