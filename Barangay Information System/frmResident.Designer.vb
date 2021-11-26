@@ -22,20 +22,29 @@ Partial Class Resident
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Resident))
         Me.dgvResidentRecords = New System.Windows.Forms.DataGridView()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSearchBox = New System.Windows.Forms.TextBox()
         Me.btnNewResident = New System.Windows.Forms.Button()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.tsEdit = New System.Windows.Forms.ToolStripButton()
-        Me.tsDelete = New System.Windows.Forms.ToolStripButton()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BarangayClearanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BusinessPermitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CertificateOfIndigencyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         CType(Me.dgvResidentRecords, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvResidentRecords
@@ -49,22 +58,22 @@ Partial Class Resident
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvResidentRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvResidentRecords.BackgroundColor = System.Drawing.Color.PaleTurquoise
-        Me.dgvResidentRecords.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(213, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvResidentRecords.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvResidentRecords.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(213, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvResidentRecords.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvResidentRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvResidentRecords.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgvResidentRecords.Location = New System.Drawing.Point(22, 92)
         Me.dgvResidentRecords.Name = "dgvResidentRecords"
         Me.dgvResidentRecords.RowHeadersVisible = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.dgvResidentRecords.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.dgvResidentRecords.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvResidentRecords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvResidentRecords.Size = New System.Drawing.Size(1060, 470)
         Me.dgvResidentRecords.StandardTab = True
@@ -117,35 +126,69 @@ Partial Class Resident
         Me.btnNewResident.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnNewResident.UseVisualStyleBackColor = True
         '
-        'ToolStrip1
+        'ContextMenuStrip1
         '
-        Me.ToolStrip1.AutoSize = False
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.None
-        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(25, 25)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsEdit, Me.tsDelete})
-        Me.ToolStrip1.Location = New System.Drawing.Point(22, 565)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1060, 35)
-        Me.ToolStrip1.TabIndex = 51
-        Me.ToolStrip1.Text = "ToolStrip1"
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.ToolStripSeparator1, Me.BToolStripMenuItem, Me.BarangayClearanceToolStripMenuItem, Me.BusinessPermitToolStripMenuItem, Me.CertificateOfIndigencyToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(199, 142)
         '
-        'tsEdit
+        'EditToolStripMenuItem
         '
-        Me.tsEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsEdit.Image = CType(resources.GetObject("tsEdit.Image"), System.Drawing.Image)
-        Me.tsEdit.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsEdit.Name = "tsEdit"
-        Me.tsEdit.Size = New System.Drawing.Size(29, 32)
-        Me.tsEdit.Text = "Edit"
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.EditToolStripMenuItem.Text = "Edit"
         '
-        'tsDelete
+        'DeleteToolStripMenuItem
         '
-        Me.tsDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsDelete.Image = CType(resources.GetObject("tsDelete.Image"), System.Drawing.Image)
-        Me.tsDelete.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsDelete.Name = "tsDelete"
-        Me.tsDelete.Size = New System.Drawing.Size(29, 32)
-        Me.tsDelete.Text = "Delete"
+        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.DeleteToolStripMenuItem.Text = "Delete"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(195, 6)
+        '
+        'BToolStripMenuItem
+        '
+        Me.BToolStripMenuItem.Name = "BToolStripMenuItem"
+        Me.BToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.BToolStripMenuItem.Text = "Certificate of Residency"
+        '
+        'BarangayClearanceToolStripMenuItem
+        '
+        Me.BarangayClearanceToolStripMenuItem.Name = "BarangayClearanceToolStripMenuItem"
+        Me.BarangayClearanceToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.BarangayClearanceToolStripMenuItem.Text = "Barangay Clearance"
+        '
+        'BusinessPermitToolStripMenuItem
+        '
+        Me.BusinessPermitToolStripMenuItem.Name = "BusinessPermitToolStripMenuItem"
+        Me.BusinessPermitToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.BusinessPermitToolStripMenuItem.Text = "Business Permit"
+        '
+        'CertificateOfIndigencyToolStripMenuItem
+        '
+        Me.CertificateOfIndigencyToolStripMenuItem.Name = "CertificateOfIndigencyToolStripMenuItem"
+        Me.CertificateOfIndigencyToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.CertificateOfIndigencyToolStripMenuItem.Text = "Certificate of Indigency"
+        '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
+        '
+        'PrintDocument1
+        '
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
         '
         'Resident
         '
@@ -154,7 +197,6 @@ Partial Class Resident
         Me.CausesValidation = False
         Me.ClientSize = New System.Drawing.Size(1106, 612)
         Me.ControlBox = False
-        Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.dgvResidentRecords)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -166,8 +208,7 @@ Partial Class Resident
         CType(Me.dgvResidentRecords, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -175,8 +216,16 @@ Partial Class Resident
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents txtSearchBox As System.Windows.Forms.TextBox
     Friend WithEvents btnNewResident As System.Windows.Forms.Button
-    Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
-    Friend WithEvents tsEdit As System.Windows.Forms.ToolStripButton
-    Friend WithEvents tsDelete As System.Windows.Forms.ToolStripButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents BToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PrintDialog1 As System.Windows.Forms.PrintDialog
+    Friend WithEvents PrintDocument1 As System.Drawing.Printing.PrintDocument
+    Friend WithEvents BarangayClearanceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BusinessPermitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CertificateOfIndigencyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DeleteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents PrintPreviewDialog1 As System.Windows.Forms.PrintPreviewDialog
 End Class

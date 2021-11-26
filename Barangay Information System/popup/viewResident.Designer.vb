@@ -22,14 +22,14 @@ Partial Class viewResident
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvResidentList = New System.Windows.Forms.DataGridView()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtSearchBox = New System.Windows.Forms.TextBox()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSelect = New System.Windows.Forms.Button()
+        Me.txtSearchBox = New System.Windows.Forms.TextBox()
         CType(Me.dgvResidentList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
@@ -46,21 +46,21 @@ Partial Class viewResident
         Me.dgvResidentList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvResidentList.BackgroundColor = System.Drawing.Color.PaleTurquoise
         Me.dgvResidentList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(213, Byte), Integer))
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvResidentList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(213, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvResidentList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvResidentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvResidentList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dgvResidentList.Location = New System.Drawing.Point(22, 87)
+        Me.dgvResidentList.Location = New System.Drawing.Point(22, 99)
         Me.dgvResidentList.Name = "dgvResidentList"
         Me.dgvResidentList.RowHeadersVisible = False
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.dgvResidentList.RowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.dgvResidentList.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvResidentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvResidentList.Size = New System.Drawing.Size(848, 412)
         Me.dgvResidentList.StandardTab = True
@@ -69,12 +69,29 @@ Partial Class viewResident
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.btnClose)
         Me.Panel5.Controls.Add(Me.Label1)
+        Me.Panel5.Controls.Add(Me.btnSelect)
         Me.Panel5.Controls.Add(Me.txtSearchBox)
         Me.Panel5.Location = New System.Drawing.Point(22, 21)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(598, 48)
+        Me.Panel5.Size = New System.Drawing.Size(848, 48)
         Me.Panel5.TabIndex = 10
+        '
+        'btnClose
+        '
+        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnClose.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.White
+        Me.btnClose.Location = New System.Drawing.Point(746, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(99, 48)
+        Me.btnClose.TabIndex = 83
+        Me.btnClose.Text = "Close"
+        Me.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnClose.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -87,29 +104,6 @@ Partial Class viewResident
         Me.Label1.TabIndex = 78
         Me.Label1.Text = "Search"
         '
-        'txtSearchBox
-        '
-        Me.txtSearchBox.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearchBox.Location = New System.Drawing.Point(72, 10)
-        Me.txtSearchBox.Name = "txtSearchBox"
-        Me.txtSearchBox.Size = New System.Drawing.Size(272, 27)
-        Me.txtSearchBox.TabIndex = 77
-        '
-        'btnClose
-        '
-        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnClose.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClose.ForeColor = System.Drawing.Color.White
-        Me.btnClose.Location = New System.Drawing.Point(771, 21)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(99, 48)
-        Me.btnClose.TabIndex = 82
-        Me.btnClose.Text = "Close"
-        Me.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
         'btnSelect
         '
         Me.btnSelect.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
@@ -118,7 +112,7 @@ Partial Class viewResident
         Me.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSelect.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSelect.ForeColor = System.Drawing.Color.White
-        Me.btnSelect.Location = New System.Drawing.Point(649, 21)
+        Me.btnSelect.Location = New System.Drawing.Point(642, 0)
         Me.btnSelect.Name = "btnSelect"
         Me.btnSelect.Size = New System.Drawing.Size(99, 48)
         Me.btnSelect.TabIndex = 81
@@ -126,14 +120,20 @@ Partial Class viewResident
         Me.btnSelect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSelect.UseVisualStyleBackColor = False
         '
+        'txtSearchBox
+        '
+        Me.txtSearchBox.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearchBox.Location = New System.Drawing.Point(72, 10)
+        Me.txtSearchBox.Name = "txtSearchBox"
+        Me.txtSearchBox.Size = New System.Drawing.Size(272, 27)
+        Me.txtSearchBox.TabIndex = 77
+        '
         'viewResident
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(898, 523)
         Me.ControlBox = False
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnSelect)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.dgvResidentList)
         Me.Cursor = System.Windows.Forms.Cursors.Default
@@ -152,6 +152,6 @@ Partial Class viewResident
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtSearchBox As System.Windows.Forms.TextBox
-    Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnSelect As System.Windows.Forms.Button
+    Friend WithEvents btnClose As System.Windows.Forms.Button
 End Class

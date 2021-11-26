@@ -14,7 +14,6 @@ Module user
                     With Dashboard
                         .btnDashboard.Visible = True
                         .btnResident.Visible = True
-                        .btnServices.Visible = True
                         .btnBlotter.Visible = True
                         .btnUser.Visible = True
                         .btnBackup.Visible = True
@@ -25,7 +24,6 @@ Module user
                     With Dashboard
                         .btnDashboard.Visible = True
                         .btnResident.Visible = True
-                        .btnServices.Visible = True
                         .btnBlotter.Visible = True
                         .btnUser.Visible = False
                         .btnBackup.Visible = False
