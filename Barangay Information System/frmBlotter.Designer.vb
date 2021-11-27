@@ -30,6 +30,7 @@ Partial Class Blotter
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSearchBox = New System.Windows.Forms.TextBox()
         Me.dgvBlotterRecords = New System.Windows.Forms.DataGridView()
+        Me.lblBRec = New System.Windows.Forms.Label()
         Me.Panel5.SuspendLayout()
         CType(Me.dgvBlotterRecords, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -57,7 +58,7 @@ Partial Class Blotter
         Me.Panel5.Controls.Add(Me.Label1)
         Me.Panel5.Controls.Add(Me.txtSearchBox)
         Me.Panel5.Controls.Add(Me.btnNewBlotter)
-        Me.Panel5.Location = New System.Drawing.Point(22, 12)
+        Me.Panel5.Location = New System.Drawing.Point(22, 80)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1060, 48)
         Me.Panel5.TabIndex = 10
@@ -103,16 +104,27 @@ Partial Class Blotter
         Me.dgvBlotterRecords.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvBlotterRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvBlotterRecords.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dgvBlotterRecords.Location = New System.Drawing.Point(22, 92)
+        Me.dgvBlotterRecords.Location = New System.Drawing.Point(22, 165)
         Me.dgvBlotterRecords.Name = "dgvBlotterRecords"
         Me.dgvBlotterRecords.RowHeadersVisible = False
         Me.dgvBlotterRecords.RowHeadersWidth = 60
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.dgvBlotterRecords.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvBlotterRecords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvBlotterRecords.Size = New System.Drawing.Size(1060, 470)
+        Me.dgvBlotterRecords.Size = New System.Drawing.Size(1060, 435)
         Me.dgvBlotterRecords.StandardTab = True
         Me.dgvBlotterRecords.TabIndex = 9
+        '
+        'lblBRec
+        '
+        Me.lblBRec.AutoSize = True
+        Me.lblBRec.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblBRec.Font = New System.Drawing.Font("Calibri", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBRec.Location = New System.Drawing.Point(14, 9)
+        Me.lblBRec.Name = "lblBRec"
+        Me.lblBRec.Size = New System.Drawing.Size(307, 45)
+        Me.lblBRec.TabIndex = 11
+        Me.lblBRec.Text = "BLOTTER RECORDS"
         '
         'Blotter
         '
@@ -120,6 +132,7 @@ Partial Class Blotter
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1106, 612)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lblBRec)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.dgvBlotterRecords)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -131,6 +144,7 @@ Partial Class Blotter
         Me.Panel5.PerformLayout()
         CType(Me.dgvBlotterRecords, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnNewBlotter As System.Windows.Forms.Button
@@ -138,4 +152,5 @@ Partial Class Blotter
     Friend WithEvents dgvBlotterRecords As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtSearchBox As System.Windows.Forms.TextBox
+    Friend WithEvents lblBRec As System.Windows.Forms.Label
 End Class

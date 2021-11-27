@@ -113,9 +113,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dtw.vb" />
     <Compile Include="includes\conn.vb" />
-    <Compile Include="includes\connection.vb" />
     <Compile Include="includes\crud.vb" />
     <Compile Include="includes\exit.vb" />
     <Compile Include="frmLogIn.vb">
@@ -184,6 +182,7 @@
     <Compile Include="popup\viewResident.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="includes\printdocu.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmLogIn.resx">

@@ -112,14 +112,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Information System.exe" size="745472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Information System.exe" size="750080">
       <assemblyIdentity name="Barangay Information System" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>u6sJuXsMIABsWSDPbXOI3b0j0A75JKA6YjUpBr/moU8=</dsig:DigestValue>
+        <dsig:DigestValue>4JKo0+ptkJfryy7Sls6b6rcW8bc5hSzLhkyqfIJYpa4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
