@@ -46,8 +46,4 @@
     Private Sub btnClose_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
-
-    Private Sub dgvResidentList_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvResidentList.CellContentClick
-
-    End Sub
 End Class

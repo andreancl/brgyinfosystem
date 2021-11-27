@@ -44,7 +44,7 @@ CREATE TABLE `residents` (
   PRIMARY KEY (`ResidentId`),
   UNIQUE KEY `ID_UNIQUE` (`Id`),
   UNIQUE KEY `RESIDENT_ID_UNIQUE` (`ResidentId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -53,6 +53,7 @@ CREATE TABLE `residents` (
 
 LOCK TABLES `residents` WRITE;
 /*!40000 ALTER TABLE `residents` DISABLE KEYS */;
+INSERT INTO `residents` VALUES (5,'RES271120210507','Castillo','Joseph Brian','Ramirez','II','Male','2000-05-21','Quezon City','Separated','Born Again','Filipino',9728364518,'210 P Tuazon Blvd Manila','2021-11-27 17:37:07','2021-11-27 17:37:07',NULL,NULL),(2,'RES271120210516','Saban','John Michael','Dante','Jr.','Male','1999-06-15','Quezon City','Married','Christian','Filipino',9124745924,'555 T. Alonzo St. Manila','2021-11-27 17:23:16','2021-11-27 17:23:16',NULL,NULL),(4,'RES271120210518','Sullera','Real','','','Male','1999-09-21','Manila','Single','Catholic','Filipino',9274851927,'1476 V.G. Cruz St. Manila','2021-11-27 17:35:18','2021-11-27 17:35:18',NULL,NULL),(3,'RES271120210526','Ovalles','Aiyies Lois','Casaclang','I','Male','1998-02-11','Manila','Separated','Iglesia Ni Cristo','Korean',9133237538,'1203 Benavidez St. Manila','2021-11-27 17:31:26','2021-11-27 17:31:26',NULL,NULL),(6,'RES271120210543','Napao','Ninna Odette','Villegas','','Female','1999-12-24','San Juan','Single','Iglesia Ni Cristo','Filipino',9276279301,'2339 Jesus St. Pandacan, Manila','2021-11-27 17:41:43','2021-11-27 17:41:43',NULL,NULL),(1,'RES271120210551','Petilla','Aileen Joy','Abellar','','Female','2000-09-02','Manila','Single','Catholic','Russian',9123423982,'734 R Hidalgo St. Manila','2021-11-27 17:21:51','2021-11-27 17:21:51',NULL,NULL),(8,'RES271120210557','Reyes','Austine Jherico','Rizaga','III','Male','2000-05-16','Caloocan','Single','Christian','Filipino',9263827354,'561 Quintin Paredes St. Binondo Manila','2021-11-27 17:44:57','2021-11-27 17:44:57',NULL,NULL),(9,'RES271120210652','Sibulo','Abegail','Yanson','','Female','2000-07-21','Manila','Single','Catholic','Filipino',9374628379,'1349 Rizal Avenue Ext. Manila','2021-11-27 18:37:52','2021-11-27 18:37:52',NULL,NULL);
 /*!40000 ALTER TABLE `residents` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -227,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-27 16:41:06
+-- Dump completed on 2021-11-27 20:59:43

@@ -5,7 +5,6 @@
         Dim dtpIncidentTime As String = DateTime.Now.ToString(militaryTimeFormat)
 
         Try
-
             query = "INSERT INTO service_details (`ServiceId`, `ComplaineeName`, `DefendantName`, `Incident`" _
                 & ", `IncidentDate`, `IncidentTime`, `Statement`, `ResidentID`) VALUES ('" & ServiceId & "'" _
                 & ", '" & txtComName.Text & "', '" & txtDefName.Text & "', '" & txtIncident.Text & "'" _

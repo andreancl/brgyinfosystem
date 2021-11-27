@@ -1,4 +1,5 @@
-﻿Module functions
+﻿
+Module functions
     Public Sub cleartext(ByVal obj As Object)
         For Each ctrl As Control In obj.Controls
             If ctrl.GetType Is GetType(TextBox) Then

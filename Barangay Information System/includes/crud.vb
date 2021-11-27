@@ -67,12 +67,12 @@ Module crud
         End Try
         con.Close()
     End Sub
-    Public Sub createNoMsg(ByVal query As String)
+    Public Sub createNoMsg(ByVal sqlquery As String)
         Try
             con.Open()
             With cmd
                 .Connection = con
-                .CommandText = query
+                .CommandText = sqlquery
                 cmd.ExecuteNonQuery()
 
             End With

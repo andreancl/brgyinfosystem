@@ -11,6 +11,7 @@ Module user
             If dr.HasRows() Then
                 dr.Read()
                 If dr("UserTypeId") = "1" Then
+                    Dashboard.lblUserName.Text = "Admin"
                     With Dashboard
                         .btnDashboard.Visible = True
                         .btnResident.Visible = True
@@ -21,6 +22,7 @@ Module user
                     Dashboard.Show()
                     frmLogIn.Hide()
                 Else
+                    Dashboard.lblUserName.Text = "User"
                     With Dashboard
                         .btnDashboard.Visible = True
                         .btnResident.Visible = True

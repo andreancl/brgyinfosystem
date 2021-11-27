@@ -58,7 +58,6 @@ Partial Class Resident
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvResidentRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvResidentRecords.BackgroundColor = System.Drawing.Color.PaleTurquoise
-        Me.dgvResidentRecords.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(213, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -75,7 +74,7 @@ Partial Class Resident
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.dgvResidentRecords.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvResidentRecords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvResidentRecords.Size = New System.Drawing.Size(1060, 470)
+        Me.dgvResidentRecords.Size = New System.Drawing.Size(1060, 496)
         Me.dgvResidentRecords.StandardTab = True
         Me.dgvResidentRecords.TabIndex = 8
         '
@@ -175,6 +174,7 @@ Partial Class Resident
         '
         'PrintDialog1
         '
+        Me.PrintDialog1.Document = Me.PrintDocument1
         Me.PrintDialog1.UseEXDialog = True
         '
         'PrintDocument1
@@ -185,6 +185,7 @@ Partial Class Resident
         Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
         Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
         Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Document = Me.PrintDocument1
         Me.PrintPreviewDialog1.Enabled = True
         Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
