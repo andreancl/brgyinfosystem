@@ -78,7 +78,7 @@ CREATE TABLE `service_details` (
   `ResidentID` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   UNIQUE KEY `ServiceDetailIsD_UNIQUE` (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +87,7 @@ CREATE TABLE `service_details` (
 
 LOCK TABLES `service_details` WRITE;
 /*!40000 ALTER TABLE `service_details` DISABLE KEYS */;
-INSERT INTO `service_details` VALUES (1,2,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(2,3,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(3,1,'juna dla cruz','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,NULL);
+INSERT INTO `service_details` VALUES (1,2,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(2,3,'Bernard gRESOLA','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,'2'),(3,1,'juna dla cruz','Rafael','safdsafasd','2021-10-20','08:00:00','blah blah','2021-10-21 22:07:59','2021-10-21 22:07:59',NULL,NULL),(4,1,'John Saban','Ovalles Aiyies','Theft','2021-11-27','14:26:51','Nnaakawan ako uuhuhuuh','2021-11-27 14:26:51','2021-11-27 14:26:51',NULL,'RES271120211241');
 /*!40000 ALTER TABLE `service_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -227,4 +227,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-24 14:57:44
+-- Dump completed on 2021-11-27 16:41:06
