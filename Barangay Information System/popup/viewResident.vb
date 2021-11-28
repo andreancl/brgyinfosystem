@@ -17,13 +17,11 @@
         reloadDgv(query, dgvResidentList)
     End Sub
     Private Sub txtSearchBox_TextChanged(sender As Object, e As EventArgs) Handles txtSearchBox.TextChanged
-        query = "SELECT `ResidentId` AS 'ResidentID',`LastName` as 'Last Name', `FirstName` as 'First Name'" _
-        & ", `MiddleName` AS 'Middle Name',`Suffix` as 'Suffix', `Sex` AS 'Sex'" _
-        & ", round( ((DATEDIFF( NOW( ) ,  `Birthdate` ) /12) /31))  AS 'Age', `Birthplace` as 'Birthplace'" _
-        & ", `CivilStatus` AS 'Civil Status', `Religion` as 'Religion', `Nationality` as 'Nationality'" _
-        & ", `ContactNo` AS 'Contact Number', `Address` AS 'Address'  FROM `residents` WHERE `ResidentId`" _
-        & ",  LIKE '%" & txtSearchBox.Text & "%'"" OR LastName LIKE '%" & txtSearchBox.Text & "%'" _
-        & ", OR FirstName LIKE '%" & txtSearchBox.Text & "%'"
+     query = "SELECT `ResidentId` AS 'ResidentID',`LastName` as 'Last Name', `FirstName` as 'First Name'" _
+           & ", `MiddleName` AS 'Middle Name',`Suffix` as 'Suffix', `Sex` AS 'Sex'" _
+           & ", round( ((DATEDIFF( NOW( ) ,  `Birthdate` ) /12) /31))  AS 'Age', `Birthplace` as 'Birthplace'" _
+           & ", `CivilStatus` AS 'Civil Status', `Religion` as 'Religion', `Nationality` as 'Nationality'" _
+           & ", `ContactNo` AS 'Contact Number', `Address` AS 'Address'  FROM `residents` WHERE ResidentID LIKE '%" & txtSearchBox.Text & "%' OR LastName LIKE '%" & txtSearchBox.Text & "%' OR FirstName LIKE '%" & txtSearchBox.Text & "%'"
         reloadDgv(query, dgvResidentList)
     End Sub
     Private Sub btnSelect_Click(sender As Object, e As EventArgs) Handles btnSelect.Click
@@ -43,7 +41,7 @@
         End Try
     End Sub
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs)
+    Private Sub btnClose_Click_1(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
 End Class

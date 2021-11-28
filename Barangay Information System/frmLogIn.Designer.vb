@@ -30,7 +30,6 @@ Partial Class frmLogIn
         Me.GunaCheckBox2 = New Guna.UI.WinForms.GunaCheckBox()
         Me.GunaButton2 = New Guna.UI.WinForms.GunaButton()
         Me.BunifuMaterialTextbox3 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.linkaccnt = New Guna.UI.WinForms.GunaLinkLabel()
         Me.btnLogIn = New Guna.UI.WinForms.GunaButton()
         Me.btnx = New Guna.UI.WinForms.GunaLabel()
         Me.p3 = New Guna.UI.WinForms.GunaPanel()
@@ -152,20 +151,6 @@ Partial Class frmLogIn
         Me.BunifuMaterialTextbox3.TabIndex = 1
         Me.BunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'linkaccnt
-        '
-        Me.linkaccnt.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.linkaccnt.AutoSize = True
-        Me.anima1.SetDecoration(Me.linkaccnt, Guna.UI.Animation.DecorationType.None)
-        Me.linkaccnt.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.linkaccnt.LinkColor = System.Drawing.Color.Silver
-        Me.linkaccnt.Location = New System.Drawing.Point(118, 423)
-        Me.linkaccnt.Name = "linkaccnt"
-        Me.linkaccnt.Size = New System.Drawing.Size(95, 15)
-        Me.linkaccnt.TabIndex = 3
-        Me.linkaccnt.TabStop = True
-        Me.linkaccnt.Text = "Forgot Password"
-        '
         'btnLogIn
         '
         Me.btnLogIn.Animated = True
@@ -268,7 +253,6 @@ Partial Class frmLogIn
         Me.p2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.p2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.p2.Controls.Add(Me.cbxPassword)
-        Me.p2.Controls.Add(Me.linkaccnt)
         Me.p2.Controls.Add(Me.btnLogIn)
         Me.p2.Controls.Add(Me.txtPassword)
         Me.p2.Controls.Add(Me.txtUserName)
@@ -411,7 +395,6 @@ Partial Class frmLogIn
     Friend WithEvents GunaCheckBox2 As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaButton2 As Guna.UI.WinForms.GunaButton
     Friend WithEvents BunifuMaterialTextbox3 As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents linkaccnt As Guna.UI.WinForms.GunaLinkLabel
     Friend WithEvents btnLogIn As Guna.UI.WinForms.GunaButton
     Friend WithEvents btnx As Guna.UI.WinForms.GunaLabel
     Friend WithEvents p3 As Guna.UI.WinForms.GunaPanel

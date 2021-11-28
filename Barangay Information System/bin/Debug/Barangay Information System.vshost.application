@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Barangay Information System.exe.manifest" size="8902">
+    <dependentAssembly dependencyType="install" codebase="Barangay Information System.exe.manifest" size="8580">
       <assemblyIdentity name="Barangay Information System.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3NkI5hrSAC3Hh8ssRydJA0HZ2DeB3VDaND868pvJbxk=</dsig:DigestValue>
+        <dsig:DigestValue>Azwbf88EHxunGwVJusHIg15Lp5M1ifJm0yOqf+Kk+lk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

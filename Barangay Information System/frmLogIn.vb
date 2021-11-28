@@ -36,16 +36,6 @@ Public Class frmLogIn
         End Try
         Return Result
     End Function
-    Private Sub linkaccnt_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkaccnt.LinkClicked
-        anima1.HideSync(p2)
-        anima1.ShowSync(p3)
-    End Sub
-
-    Private Sub btnx_Click_1(sender As Object, e As EventArgs) Handles btnx.Click
-        anima1.HideSync(p3)
-        anima1.ShowSync(p2)
-    End Sub
-
     Private Sub cbxPassword_CheckedChanged(sender As Object, e As EventArgs) Handles cbxPassword.CheckedChanged
         If cbxPassword.Checked = False Then
             txtPassword.isPassword = True
