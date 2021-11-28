@@ -25,6 +25,16 @@ Partial Class NewUser
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewUser))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.gbUser = New System.Windows.Forms.GroupBox()
+        Me.rdoFemale = New System.Windows.Forms.RadioButton()
+        Me.rdoMale = New System.Windows.Forms.RadioButton()
+        Me.rdouser = New System.Windows.Forms.RadioButton()
+        Me.rdoadmin = New System.Windows.Forms.RadioButton()
+        Me.cmbPosition = New System.Windows.Forms.ComboBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtContactNum = New System.Windows.Forms.TextBox()
+        Me.dtpBirthdate = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -39,22 +49,14 @@ Partial Class NewUser
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.cmbSex = New System.Windows.Forms.ComboBox()
         Me.cmbSuffix = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.linkClose = New Guna.UI.WinForms.GunaLinkLabel()
         Me.btnCreate = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblUserId = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lblBIS = New System.Windows.Forms.Label()
-        Me.dtpBirthdate = New System.Windows.Forms.DateTimePicker()
-        Me.txtContactNum = New System.Windows.Forms.TextBox()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
-        Me.txtUsername = New System.Windows.Forms.TextBox()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.cmbPosition = New System.Windows.Forms.ComboBox()
-        Me.rdouser = New System.Windows.Forms.RadioButton()
-        Me.rdoadmin = New System.Windows.Forms.RadioButton()
         Me.Panel2.SuspendLayout()
         Me.gbUser.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -74,6 +76,8 @@ Partial Class NewUser
         '
         'gbUser
         '
+        Me.gbUser.Controls.Add(Me.rdoFemale)
+        Me.gbUser.Controls.Add(Me.rdoMale)
         Me.gbUser.Controls.Add(Me.rdouser)
         Me.gbUser.Controls.Add(Me.rdoadmin)
         Me.gbUser.Controls.Add(Me.cmbPosition)
@@ -96,7 +100,6 @@ Partial Class NewUser
         Me.gbUser.Controls.Add(Me.Label5)
         Me.gbUser.Controls.Add(Me.Label6)
         Me.gbUser.Controls.Add(Me.Label7)
-        Me.gbUser.Controls.Add(Me.cmbSex)
         Me.gbUser.Controls.Add(Me.cmbSuffix)
         Me.gbUser.Controls.Add(Me.Label14)
         Me.gbUser.Location = New System.Drawing.Point(48, 83)
@@ -104,6 +107,123 @@ Partial Class NewUser
         Me.gbUser.Size = New System.Drawing.Size(377, 401)
         Me.gbUser.TabIndex = 66
         Me.gbUser.TabStop = False
+        '
+        'rdoFemale
+        '
+        Me.rdoFemale.AutoSize = True
+        Me.rdoFemale.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoFemale.ForeColor = System.Drawing.Color.White
+        Me.rdoFemale.Location = New System.Drawing.Point(208, 145)
+        Me.rdoFemale.Name = "rdoFemale"
+        Me.rdoFemale.Size = New System.Drawing.Size(74, 23)
+        Me.rdoFemale.TabIndex = 111
+        Me.rdoFemale.TabStop = True
+        Me.rdoFemale.Text = "Female"
+        Me.rdoFemale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rdoFemale.UseVisualStyleBackColor = True
+        '
+        'rdoMale
+        '
+        Me.rdoMale.AutoSize = True
+        Me.rdoMale.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoMale.ForeColor = System.Drawing.Color.White
+        Me.rdoMale.Location = New System.Drawing.Point(142, 145)
+        Me.rdoMale.Name = "rdoMale"
+        Me.rdoMale.Size = New System.Drawing.Size(60, 23)
+        Me.rdoMale.TabIndex = 110
+        Me.rdoMale.TabStop = True
+        Me.rdoMale.Text = "Male"
+        Me.rdoMale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rdoMale.UseVisualStyleBackColor = True
+        '
+        'rdouser
+        '
+        Me.rdouser.AutoSize = True
+        Me.rdouser.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdouser.ForeColor = System.Drawing.Color.White
+        Me.rdouser.Location = New System.Drawing.Point(216, 364)
+        Me.rdouser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdouser.Name = "rdouser"
+        Me.rdouser.Size = New System.Drawing.Size(57, 23)
+        Me.rdouser.TabIndex = 108
+        Me.rdouser.TabStop = True
+        Me.rdouser.Text = "User"
+        Me.rdouser.UseVisualStyleBackColor = True
+        '
+        'rdoadmin
+        '
+        Me.rdoadmin.AutoSize = True
+        Me.rdoadmin.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoadmin.ForeColor = System.Drawing.Color.White
+        Me.rdoadmin.Location = New System.Drawing.Point(141, 364)
+        Me.rdoadmin.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdoadmin.Name = "rdoadmin"
+        Me.rdoadmin.Size = New System.Drawing.Size(68, 23)
+        Me.rdoadmin.TabIndex = 109
+        Me.rdoadmin.TabStop = True
+        Me.rdoadmin.Text = "Admin"
+        Me.rdoadmin.UseVisualStyleBackColor = True
+        '
+        'cmbPosition
+        '
+        Me.cmbPosition.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbPosition.FormattingEnabled = True
+        Me.cmbPosition.Items.AddRange(New Object() {"Chairman", "Secretary", "Kagawad"})
+        Me.cmbPosition.Location = New System.Drawing.Point(139, 330)
+        Me.cmbPosition.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.cmbPosition.Name = "cmbPosition"
+        Me.cmbPosition.Size = New System.Drawing.Size(221, 27)
+        Me.cmbPosition.TabIndex = 107
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(139, 299)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(221, 27)
+        Me.txtPassword.TabIndex = 106
+        '
+        'txtUsername
+        '
+        Me.txtUsername.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(139, 268)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(221, 27)
+        Me.txtUsername.TabIndex = 105
+        '
+        'txtAddress
+        '
+        Me.txtAddress.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(139, 237)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtAddress.Multiline = True
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(221, 27)
+        Me.txtAddress.TabIndex = 104
+        '
+        'txtContactNum
+        '
+        Me.txtContactNum.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactNum.Location = New System.Drawing.Point(139, 206)
+        Me.txtContactNum.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtContactNum.Name = "txtContactNum"
+        Me.txtContactNum.Size = New System.Drawing.Size(221, 27)
+        Me.txtContactNum.TabIndex = 103
+        '
+        'dtpBirthdate
+        '
+        Me.dtpBirthdate.CustomFormat = "yyyy-MM-dd"
+        Me.dtpBirthdate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpBirthdate.Location = New System.Drawing.Point(139, 175)
+        Me.dtpBirthdate.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.dtpBirthdate.Name = "dtpBirthdate"
+        Me.dtpBirthdate.Size = New System.Drawing.Size(221, 27)
+        Me.dtpBirthdate.TabIndex = 102
+        Me.dtpBirthdate.Value = New Date(2021, 10, 16, 0, 0, 0, 0)
         '
         'Label12
         '
@@ -275,17 +395,6 @@ Partial Class NewUser
         Me.Label7.Text = "Sex"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'cmbSex
-        '
-        Me.cmbSex.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbSex.FormattingEnabled = True
-        Me.cmbSex.Items.AddRange(New Object() {"Male", "Female"})
-        Me.cmbSex.Location = New System.Drawing.Point(139, 144)
-        Me.cmbSex.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.cmbSex.Name = "cmbSex"
-        Me.cmbSex.Size = New System.Drawing.Size(221, 27)
-        Me.cmbSex.TabIndex = 36
-        '
         'cmbSuffix
         '
         Me.cmbSuffix.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -342,12 +451,22 @@ Partial Class NewUser
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lblUserId)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.lblBIS)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(485, 77)
         Me.Panel1.TabIndex = 81
+        '
+        'lblUserId
+        '
+        Me.lblUserId.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblUserId.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserId.Location = New System.Drawing.Point(349, 51)
+        Me.lblUserId.Name = "lblUserId"
+        Me.lblUserId.Size = New System.Drawing.Size(136, 26)
+        Me.lblUserId.TabIndex = 5
         '
         'Label9
         '
@@ -370,95 +489,6 @@ Partial Class NewUser
         Me.lblBIS.Size = New System.Drawing.Size(379, 42)
         Me.lblBIS.TabIndex = 1
         Me.lblBIS.Text = "CREATE ACCOUNT FORM"
-        '
-        'dtpBirthdate
-        '
-        Me.dtpBirthdate.CustomFormat = "yyyy-MM-dd"
-        Me.dtpBirthdate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpBirthdate.Location = New System.Drawing.Point(139, 175)
-        Me.dtpBirthdate.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.dtpBirthdate.Name = "dtpBirthdate"
-        Me.dtpBirthdate.Size = New System.Drawing.Size(221, 27)
-        Me.dtpBirthdate.TabIndex = 102
-        Me.dtpBirthdate.Value = New Date(2021, 10, 16, 0, 0, 0, 0)
-        '
-        'txtContactNum
-        '
-        Me.txtContactNum.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContactNum.Location = New System.Drawing.Point(139, 206)
-        Me.txtContactNum.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtContactNum.Name = "txtContactNum"
-        Me.txtContactNum.Size = New System.Drawing.Size(221, 27)
-        Me.txtContactNum.TabIndex = 103
-        '
-        'txtAddress
-        '
-        Me.txtAddress.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(139, 237)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtAddress.Multiline = True
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(221, 27)
-        Me.txtAddress.TabIndex = 104
-        '
-        'txtUsername
-        '
-        Me.txtUsername.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(139, 268)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(221, 27)
-        Me.txtUsername.TabIndex = 105
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(139, 299)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(221, 27)
-        Me.txtPassword.TabIndex = 106
-        '
-        'cmbPosition
-        '
-        Me.cmbPosition.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbPosition.FormattingEnabled = True
-        Me.cmbPosition.Items.AddRange(New Object() {"Chairman", "Secretary", "Kagawad"})
-        Me.cmbPosition.Location = New System.Drawing.Point(139, 330)
-        Me.cmbPosition.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.cmbPosition.Name = "cmbPosition"
-        Me.cmbPosition.Size = New System.Drawing.Size(221, 27)
-        Me.cmbPosition.TabIndex = 107
-        '
-        'rdouser
-        '
-        Me.rdouser.AutoSize = True
-        Me.rdouser.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdouser.ForeColor = System.Drawing.Color.White
-        Me.rdouser.Location = New System.Drawing.Point(216, 364)
-        Me.rdouser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.rdouser.Name = "rdouser"
-        Me.rdouser.Size = New System.Drawing.Size(57, 23)
-        Me.rdouser.TabIndex = 108
-        Me.rdouser.TabStop = True
-        Me.rdouser.Text = "User"
-        Me.rdouser.UseVisualStyleBackColor = True
-        '
-        'rdoadmin
-        '
-        Me.rdoadmin.AutoSize = True
-        Me.rdoadmin.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoadmin.ForeColor = System.Drawing.Color.White
-        Me.rdoadmin.Location = New System.Drawing.Point(141, 364)
-        Me.rdoadmin.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.rdoadmin.Name = "rdoadmin"
-        Me.rdoadmin.Size = New System.Drawing.Size(68, 23)
-        Me.rdoadmin.TabIndex = 109
-        Me.rdoadmin.TabStop = True
-        Me.rdoadmin.Text = "Admin"
-        Me.rdoadmin.UseVisualStyleBackColor = True
         '
         'NewUser
         '
@@ -497,7 +527,6 @@ Partial Class NewUser
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents cmbSex As System.Windows.Forms.ComboBox
     Friend WithEvents cmbSuffix As System.Windows.Forms.ComboBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -513,4 +542,7 @@ Partial Class NewUser
     Friend WithEvents cmbPosition As System.Windows.Forms.ComboBox
     Friend WithEvents rdouser As System.Windows.Forms.RadioButton
     Friend WithEvents rdoadmin As System.Windows.Forms.RadioButton
+    Friend WithEvents lblUserId As System.Windows.Forms.Label
+    Friend WithEvents rdoFemale As System.Windows.Forms.RadioButton
+    Friend WithEvents rdoMale As System.Windows.Forms.RadioButton
 End Class

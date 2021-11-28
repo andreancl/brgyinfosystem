@@ -41,7 +41,7 @@
                     & ", '" & txtNationality.Text & "', '" & txtContactNo.Text & "', '" & txtAddress.Text & "')"
                 create(query, txtFirstName.Text & " " & txtLastName.Text)
             End If
-            Resident.load_ResidentInfo()
+            frmUser.load_UserRecords()
             cleartext(gbResident)
             setup(gbResident)
 

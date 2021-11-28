@@ -134,6 +134,7 @@ Partial Class Backup
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Backup"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.gbBr.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()

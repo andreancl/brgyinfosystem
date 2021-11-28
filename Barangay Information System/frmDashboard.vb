@@ -15,7 +15,8 @@
         showForm(Blotter)
     End Sub
     Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
-        NewUser.Show()
+        closeChildForm()
+        showForm(frmUser)
     End Sub
     Private Sub btnBackup_Click(sender As Object, e As EventArgs) Handles btnBackup.Click
         Backup.Show()
